@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar sesión | ZentryX</title>
+
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+
+    <main class="login-container">
+
+        <!-- =========================================
+             PANEL INFORMATIVO
+        ========================================== -->
+
+        <section class="login-info">
+
+            <div class="logo">
+                <span>Z</span>entryX
+            </div>
+
+            <div class="info-content">
+
+                <span class="welcome-badge">
+                    Bienvenido a ZentryX
+                </span>
+
+                <h1>
+                    Todo comienza
+                    <span>conectándote.</span>
+                </h1>
+
+                <p>
+                    Accede a tu cuenta para continuar utilizando
+                    las herramientas y funcionalidades de ZentryX.
+                </p>
+
+                <div class="info-features">
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            ✓
+                        </div>
+
+                        <div>
+                            <strong>Acceso rápido</strong>
+                            <p>
+                                Ingresa a tu cuenta en segundos.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            ✓
+                        </div>
+
+                        <div>
+                            <strong>Cuenta protegida</strong>
+                            <p>
+                                Tu sesión se mantiene asociada a tu cuenta.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <div class="feature-icon">
+                            ✓
+                        </div>
+
+                        <div>
+                            <strong>Experiencia ZentryX</strong>
+                            <p>
+                                Continúa donde lo dejaste.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="info-footer">
+
+                <span>
+                    © 2026 ZentryX
+                </span>
+
+                <span>
+                    Todos los derechos reservados.
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             PANEL LOGIN
+        ========================================== -->
+
+        <section class="login-formulario">
+
+            <div class="form-header">
+
+                <div class="mobile-logo">
+                    <span>Z</span>entryX
+                </div>
+
+                <h2>
+                    Iniciar sesión
+                </h2>
+
+                <p>
+                    Ingresa tus credenciales para acceder a tu cuenta.
+                </p>
+
+            </div>
+
+
+            <!-- =====================================
+                 FORMULARIO
+            ====================================== -->
+
+            <form
+                id="loginForm"
+                novalidate>
+
+
+                <!-- Usuario / correo -->
+
+                <div class="form-group">
+
+                    <label for="loginUsuario">
+                        Usuario o correo electrónico
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">
+                            @
+                        </span>
+
+                        <input
+                            type="text"
+                            id="loginUsuario"
+                            name="loginUsuario"
+                            placeholder="Usuario o correo"
+                            autocomplete="username"
+                            required
+                        >
+
+                    </div>
+
+                    <small
+                        class="error-message"
+                        id="loginUsuarioError">
+                    </small>
+
+                </div>
+
+
+                <!-- Contraseña -->
+
+                <div class="form-group">
+
+                    <div class="password-label">
+
+                        <label for="loginPassword">
+                            Contraseña
+                        </label>
+
+                        <a
+                            href="#"
+                            id="forgotPassword">
+                            ¿Olvidaste tu contraseña?
+                        </a>
+
+                    </div>
+
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">
+                            ●
+                        </span>
+
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            name="loginPassword"
+                            placeholder="Ingresa tu contraseña"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="toggle-password"
+                            id="toggleLoginPassword"
+                            aria-label="Mostrar contraseña">
+
+                            Mostrar
+
+                        </button>
+
+                    </div>
+
+                    <small
+                        class="error-message"
+                        id="loginPasswordError">
+                    </small>
+
+                </div>
+
+
+                <!-- Recordar sesión -->
+
+                <div class="remember-container">
+
+                    <label class="remember-label">
+
+                        <input
+                            type="checkbox"
+                            id="rememberSession"
+                            name="rememberSession"
+                        >
+
+                        <span class="remember-check"></span>
+
+                        <span>
+                            Mantener mi sesión iniciada
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- Mensaje general -->
+
+                <div
+                    id="loginMessage"
+                    class="login-message"
+                    role="alert">
+                </div>
+
+
+                <!-- Botón -->
+
+                <button
+                    type="submit"
+                    id="btnLogin"
+                    class="btn-login">
+
+                    <span id="loginBtnText">
+                        Iniciar sesión
+                    </span>
+
+                    <span
+                        id="loginBtnLoader"
+                        class="loader"
+                        hidden>
+                    </span>
+
+                </button>
+
+            </form>
+
+
+            <!-- =====================================
+                 REGISTRO
+            ====================================== -->
+
+            <div class="register-link">
+
+                <span>
+                    ¿Todavía no tienes una cuenta?
+                </span>
+
+                <a href="registro.html">
+                    Crear una cuenta
+                </a>
+
+            </div>
+
+
+            <!-- =====================================
+                 INFORMACIÓN DEMO
+            ====================================== -->
+
+            <div class="demo-info">
+
+                <span class="demo-icon">
+                    i
+                </span>
+
+                <div>
+
+                    <strong>
+                        Demo ZentryX
+                    </strong>
+
+                    <p>
+                        Puedes utilizar una cuenta creada desde
+                        el formulario de registro.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         MODAL RECUPERACIÓN
+    ========================================== -->
+
+    <div
+        class="modal"
+        id="forgotModal"
+        aria-hidden="true">
+
+        <div
+            class="modal-overlay"
+            id="forgotModalOverlay">
+        </div>
+
+
+        <div
+            class="modal-content"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="forgotModalTitle">
+
+            <button
+                type="button"
+                class="modal-close"
+                id="forgotModalClose"
+                aria-label="Cerrar">
+
+                &times;
+
+            </button>
+
+
+            <div class="modal-icon">
+                ?
+            </div>
+
+
+            <h2 id="forgotModalTitle">
+                Recuperar contraseña
+            </h2>
+
+            <p>
+                Introduce el correo asociado a tu cuenta para
+                iniciar el proceso de recuperación.
+            </p>
+
+
+            <div class="form-group">
+
+                <label for="recoveryEmail">
+                    Correo electrónico
+                </label>
+
+                <input
+                    type="email"
+                    id="recoveryEmail"
+                    placeholder="correo@ejemplo.com"
+                >
+
+                <small
+                    class="error-message"
+                    id="recoveryError">
+                </small>
+
+            </div>
+
+
+            <div
+                id="recoveryMessage"
+                class="recovery-message">
+            </div>
+
+
+            <button
+                type="button"
+                class="modal-button"
+                id="recoveryButton">
+
+                Continuar
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="../js/login.js"></script>
+
+</body>
+</html>

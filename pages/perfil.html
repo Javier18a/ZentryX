@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Perfil de usuario - ZentryX">
+
+    <title>Mi Perfil | ZentryX</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/perfil.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         APP
+    ====================================================== -->
+
+    <div class="app-container">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside
+            class="sidebar"
+            id="sidebar">
+
+
+            <!-- HEADER -->
+
+            <div class="sidebar-header">
+
+                <a
+                    href="dashboard.html"
+                    class="logo">
+
+                    <span>Z</span>entryX
+
+                </a>
+
+
+                <button
+                    type="button"
+                    class="sidebar-close"
+                    id="sidebarClose">
+
+                    &times;
+
+                </button>
+
+            </div>
+
+
+            <!-- PERFIL -->
+
+            <div class="sidebar-profile">
+
+                <div
+                    class="profile-avatar"
+                    id="profileAvatar">
+
+                    U
+
+                </div>
+
+
+                <div class="profile-info">
+
+                    <strong id="sidebarUserName">
+                        Usuario
+                    </strong>
+
+                    <span id="sidebarUserRole">
+                        Usuario
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- NAVEGACIÓN -->
+
+            <nav class="sidebar-nav">
+
+
+                <p class="nav-title">
+                    PRINCIPAL
+                </p>
+
+
+                <a
+                    href="dashboard.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        ▦
+                    </span>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="dashboard.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        ◷
+                    </span>
+
+                    <span>
+                        Actividad
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="dashboard.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        ♢
+                    </span>
+
+                    <span>
+                        Notificaciones
+                    </span>
+
+                </a>
+
+
+                <p class="nav-title">
+                    CUENTA
+                </p>
+
+
+                <a
+                    href="perfil.html"
+                    class="nav-item active">
+
+                    <span class="nav-icon">
+                        ◎
+                    </span>
+
+                    <span>
+                        Mi perfil
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="nav-item"
+                    id="configurationLink">
+
+                    <span class="nav-icon">
+                        ⚙
+                    </span>
+
+                    <span>
+                        Configuración
+                    </span>
+
+                </a>
+
+
+            </nav>
+
+
+            <!-- FOOTER -->
+
+            <div class="sidebar-footer">
+
+                <button
+                    type="button"
+                    class="logout-button"
+                    id="logoutButton">
+
+                    <span class="nav-icon">
+                        ↪
+                    </span>
+
+                    <span>
+                        Cerrar sesión
+                    </span>
+
+                </button>
+
+            </div>
+
+
+        </aside>
+
+
+        <!-- =================================================
+             OVERLAY
+        ================================================== -->
+
+        <div
+            class="sidebar-overlay"
+            id="sidebarOverlay">
+        </div>
+
+
+
+        <!-- =================================================
+             MAIN
+        ================================================== -->
+
+        <main class="main-content">
+
+
+            <!-- =================================================
+                 TOPBAR
+            ================================================== -->
+
+            <header class="topbar">
+
+
+                <div class="topbar-left">
+
+
+                    <button
+                        type="button"
+                        class="menu-button"
+                        id="menuButton">
+
+                        ☰
+
+                    </button>
+
+
+                    <div>
+
+                        <span class="page-label">
+                            CUENTA
+                        </span>
+
+                        <h1>
+                            Mi perfil
+                        </h1>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="topbar-right">
+
+
+                    <!-- NOTIFICACIONES -->
+
+                    <button
+                        type="button"
+                        class="notification-button"
+                        id="notificationButton">
+
+                        ♢
+
+                        <span
+                            class="notification-dot"
+                            id="notificationDot">
+                        </span>
+
+                    </button>
+
+
+                    <!-- USUARIO -->
+
+                    <div class="topbar-user">
+
+
+                        <div
+                            class="topbar-avatar"
+                            id="topbarAvatar">
+
+                            U
+
+                        </div>
+
+
+                        <div class="topbar-user-info">
+
+                            <strong id="topbarUserName">
+                                Usuario
+                            </strong>
+
+                            <span id="topbarUserEmail">
+                                usuario@zentryx.com
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </header>
+
+
+
+            <!-- =================================================
+                 CONTENIDO
+            ================================================== -->
+
+            <section class="profile-content">
+
+
+                <!-- =================================================
+                     ENCABEZADO
+                ================================================== -->
+
+                <div class="profile-heading">
+
+
+                    <div>
+
+                        <span>
+                            INFORMACIÓN PERSONAL
+                        </span>
+
+                        <h2>
+                            Mi perfil
+                        </h2>
+
+                        <p>
+                            Consulta y administra la información
+                            asociada a tu cuenta de ZentryX.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="dashboard.html"
+                        class="back-button">
+
+                        ←
+                        Volver al dashboard
+
+                    </a>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     PERFIL PRINCIPAL
+                ================================================== -->
+
+                <div class="profile-layout">
+
+
+                    <!-- =================================================
+                         TARJETA PERFIL
+                    ================================================== -->
+
+                    <section class="profile-card main-profile-card">
+
+
+                        <div class="profile-cover">
+
+
+                            <div
+                                class="profile-main-avatar"
+                                id="mainAvatar">
+
+                                U
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="profile-card-body">
+
+
+                            <h3 id="profileFullName">
+                                Usuario
+                            </h3>
+
+
+                            <p
+                                class="profile-username"
+                                id="profileUsername">
+
+                                @usuario
+
+                            </p>
+
+
+                            <div class="profile-role">
+
+                                <span class="role-dot">
+                                </span>
+
+                                <span id="profileRole">
+                                    Usuario
+                                </span>
+
+                            </div>
+
+
+                            <div class="profile-divider">
+                            </div>
+
+
+                            <div class="profile-mini-info">
+
+
+                                <div>
+
+                                    <span>
+                                        Estado
+                                    </span>
+
+                                    <strong
+                                        id="accountStatus">
+
+                                        Activo
+
+                                    </strong>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>
+                                        Miembro desde
+                                    </span>
+
+                                    <strong
+                                        id="memberSince">
+
+                                        --
+
+                                    </strong>
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </section>
+
+
+
+                    <!-- =================================================
+                         INFORMACIÓN
+                    ================================================== -->
+
+                    <section class="profile-card information-card">
+
+
+                        <div class="card-header">
+
+
+                            <div>
+
+                                <span>
+                                    DATOS DE LA CUENTA
+                                </span>
+
+                                <h3>
+                                    Información personal
+                                </h3>
+
+                            </div>
+
+
+                            <button
+                                type="button"
+                                class="edit-button"
+                                id="editButton">
+
+                                ✎
+                                Editar
+
+                            </button>
+
+
+                        </div>
+
+
+
+                        <!-- FORMULARIO -->
+
+                        <form
+                            id="profileForm"
+                            autocomplete="off">
+
+
+                            <!-- NOMBRE -->
+
+                            <div class="form-grid">
+
+
+                                <div class="form-group">
+
+                                    <label for="nombre">
+                                        Nombre
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="nombre"
+                                        name="nombre"
+                                        disabled>
+
+                                </div>
+
+
+                                <!-- APELLIDO -->
+
+                                <div class="form-group">
+
+                                    <label for="apellido">
+                                        Apellido
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="apellido"
+                                        name="apellido"
+                                        disabled>
+
+                                </div>
+
+
+                            </div>
+
+
+
+                            <!-- USUARIO -->
+
+                            <div class="form-group">
+
+                                <label for="usuario">
+                                    Nombre de usuario
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="usuario"
+                                    name="usuario"
+                                    disabled>
+
+                            </div>
+
+
+
+                            <!-- CORREO -->
+
+                            <div class="form-group">
+
+                                <label for="correo">
+                                    Correo electrónico
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="correo"
+                                    name="correo"
+                                    disabled>
+
+                            </div>
+
+
+
+                            <!-- IDENTIFICADOR -->
+
+                            <div class="form-group">
+
+                                <label for="identificador">
+                                    Identificador de usuario
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="identificador"
+                                    name="identificador"
+                                    disabled>
+
+                            </div>
+
+
+
+                            <!-- BOTONES -->
+
+                            <div
+                                class="form-actions"
+                                id="formActions">
+
+
+                                <button
+                                    type="button"
+                                    class="cancel-button"
+                                    id="cancelButton">
+
+                                    Cancelar
+
+                                </button>
+
+
+                                <button
+                                    type="submit"
+                                    class="save-button">
+
+                                    Guardar cambios
+
+                                </button>
+
+
+                            </div>
+
+
+                        </form>
+
+
+                    </section>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     SEGURIDAD
+                ================================================== -->
+
+                <section class="profile-card security-card">
+
+
+                    <div class="card-header">
+
+
+                        <div>
+
+                            <span>
+                                SEGURIDAD
+                            </span>
+
+                            <h3>
+                                Seguridad de la cuenta
+                            </h3>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="security-grid">
+
+
+                        <!-- CONTRASEÑA -->
+
+                        <div class="security-item">
+
+
+                            <div class="security-icon">
+                                ●
+                            </div>
+
+
+                            <div class="security-content">
+
+                                <strong>
+                                    Contraseña
+                                </strong>
+
+                                <p>
+                                    Protege tu cuenta con una
+                                    contraseña segura.
+                                </p>
+
+                            </div>
+
+
+                            <button
+                                type="button"
+                                class="security-button"
+                                id="passwordButton">
+
+                                Cambiar
+
+                            </button>
+
+
+                        </div>
+
+
+
+                        <!-- SESIONES -->
+
+                        <div class="security-item">
+
+
+                            <div class="security-icon">
+                                ◉
+                            </div>
+
+
+                            <div class="security-content">
+
+                                <strong>
+                                    Sesión actual
+                                </strong>
+
+                                <p>
+                                    Esta sesión se encuentra
+                                    activa.
+                                </p>
+
+                            </div>
+
+
+                            <span
+                                class="security-status">
+
+                                Activa
+
+                            </span>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =================================================
+                     INFORMACIÓN DE CUENTA
+                ================================================== -->
+
+                <section class="account-details">
+
+
+                    <div>
+
+                        <span>
+                            IDENTIFICADOR
+                        </span>
+
+                        <strong id="accountId">
+                            ZENTRYX-USER
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            TIPO DE CUENTA
+                        </span>
+
+                        <strong id="accountType">
+                            Usuario
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            ÚLTIMA SESIÓN
+                        </span>
+
+                        <strong id="lastSession">
+                            Sesión actual
+                        </strong>
+
+                    </div>
+
+
+                </section>
+
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         MODAL CERRAR SESIÓN
+    ====================================================== -->
+
+    <div
+        class="modal"
+        id="logoutModal">
+
+
+        <div
+            class="modal-overlay"
+            id="logoutModalOverlay">
+        </div>
+
+
+        <div class="modal-content">
+
+
+            <div class="modal-icon">
+                ↪
+            </div>
+
+
+            <h2>
+                Cerrar sesión
+            </h2>
+
+
+            <p>
+                ¿Estás seguro de que deseas cerrar tu sesión
+                actual en ZentryX?
+            </p>
+
+
+            <div class="modal-actions">
+
+
+                <button
+                    type="button"
+                    class="modal-cancel"
+                    id="cancelLogout">
+
+                    Cancelar
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="modal-confirm"
+                    id="confirmLogout">
+
+                    Cerrar sesión
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         MODAL CAMBIAR CONTRASEÑA
+    ====================================================== -->
+
+    <div
+        class="modal"
+        id="passwordModal">
+
+
+        <div
+            class="modal-overlay"
+            id="passwordModalOverlay">
+        </div>
+
+
+        <div class="modal-content password-modal">
+
+
+            <div class="modal-icon password-icon">
+                ●
+            </div>
+
+
+            <h2>
+                Cambiar contraseña
+            </h2>
+
+
+            <p>
+                Actualiza la contraseña de tu cuenta ZentryX.
+            </p>
+
+
+            <form
+                id="passwordForm">
+
+
+                <div class="form-group">
+
+                    <label for="currentPassword">
+                        Contraseña actual
+                    </label>
+
+                    <input
+                        type="password"
+                        id="currentPassword"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="newPassword">
+                        Nueva contraseña
+                    </label>
+
+                    <input
+                        type="password"
+                        id="newPassword"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+                        Confirmar contraseña
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        required>
+
+                </div>
+
+
+                <div
+                    class="password-message"
+                    id="passwordMessage">
+                </div>
+
+
+                <div class="modal-actions">
+
+
+                    <button
+                        type="button"
+                        class="modal-cancel"
+                        id="cancelPassword">
+
+                        Cancelar
+
+                    </button>
+
+
+                    <button
+                        type="submit"
+                        class="modal-confirm password-confirm">
+
+                        Actualizar
+
+                    </button>
+
+
+                </div>
+
+
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         NOTIFICACIONES
+    ====================================================== -->
+
+    <div
+        class="notification-panel"
+        id="notificationPanel">
+
+
+        <div class="notification-header">
+
+
+            <div>
+
+                <span>
+                    ZENTRYX
+                </span>
+
+                <h3>
+                    Notificaciones
+                </h3>
+
+            </div>
+
+
+            <button
+                type="button"
+                id="closeNotifications">
+
+                &times;
+
+            </button>
+
+
+        </div>
+
+
+        <div
+            class="notification-list"
+            id="notificationList">
+
+
+            <div class="notification-empty">
+
+                <div>
+                    ♢
+                </div>
+
+                <p>
+                    No tienes notificaciones nuevas.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         TOAST
+    ====================================================== -->
+
+    <div
+        class="toast"
+        id="toast">
+
+
+        <div
+            class="toast-icon"
+            id="toastIcon">
+
+            ✓
+
+        </div>
+
+
+        <div>
+
+            <strong id="toastTitle">
+                Éxito
+            </strong>
+
+            <p id="toastMessage">
+                Operación realizada correctamente.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="../js/perfil.js"></script>
+
+</body>
+
+</html>

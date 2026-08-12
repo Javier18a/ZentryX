@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro | ZentryX</title>
+
+    <link rel="stylesheet" href="../css/registro.css">
+</head>
+
+<body>
+
+    <main class="registro-container">
+
+        <!-- Panel informativo -->
+        <section class="registro-info">
+
+            <div class="logo">
+                <span>Z</span>entryX
+            </div>
+
+            <div class="info-content">
+                <h1>Únete a ZentryX</h1>
+
+                <p>
+                    Crea tu cuenta y comienza a formar parte de
+                    nuestra plataforma.
+                </p>
+
+                <div class="beneficios">
+
+                    <div class="beneficio">
+                        <div class="beneficio-icono">✓</div>
+                        <div>
+                            <h3>Acceso seguro</h3>
+                            <p>Protegemos la información de tu cuenta.</p>
+                        </div>
+                    </div>
+
+                    <div class="beneficio">
+                        <div class="beneficio-icono">✓</div>
+                        <div>
+                            <h3>Experiencia personalizada</h3>
+                            <p>Configura tu perfil y disfruta de ZentryX.</p>
+                        </div>
+                    </div>
+
+                    <div class="beneficio">
+                        <div class="beneficio-icono">✓</div>
+                        <div>
+                            <h3>Una sola cuenta</h3>
+                            <p>Administra tu acceso desde un solo lugar.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="info-footer">
+                <span>© 2026 ZentryX</span>
+                <span>Todos los derechos reservados.</span>
+            </div>
+
+        </section>
+
+
+        <!-- Formulario de registro -->
+        <section class="registro-formulario">
+
+            <div class="form-header">
+
+                <div class="mobile-logo">
+                    <span>Z</span>entryX
+                </div>
+
+                <h2>Crear una cuenta</h2>
+
+                <p>
+                    Completa los siguientes datos para registrarte.
+                </p>
+
+            </div>
+
+
+            <form id="registroForm" novalidate>
+
+                <!-- Nombre y apellido -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="nombre">
+                            Nombre
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Ingresa tu nombre"
+                            autocomplete="given-name"
+                            required
+                        >
+
+                        <small
+                            class="error-message"
+                            id="nombreError">
+                        </small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="apellido">
+                            Apellido
+                        </label>
+
+                        <input
+                            type="text"
+                            id="apellido"
+                            name="apellido"
+                            placeholder="Ingresa tu apellido"
+                            autocomplete="family-name"
+                            required
+                        >
+
+                        <small
+                            class="error-message"
+                            id="apellidoError">
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Usuario -->
+                <div class="form-group">
+
+                    <label for="usuario">
+                        Nombre de usuario
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">@</span>
+
+                        <input
+                            type="text"
+                            id="usuario"
+                            name="usuario"
+                            placeholder="Ej. javier123"
+                            autocomplete="username"
+                            maxlength="30"
+                            required
+                        >
+
+                    </div>
+
+                    <small class="input-hint">
+                        Utiliza entre 4 y 30 caracteres.
+                    </small>
+
+                    <small
+                        class="error-message"
+                        id="usuarioError">
+                    </small>
+
+                </div>
+
+
+                <!-- Correo -->
+                <div class="form-group">
+
+                    <label for="correo">
+                        Correo electrónico
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">✉</span>
+
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="correo@ejemplo.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+                    <small
+                        class="error-message"
+                        id="correoError">
+                    </small>
+
+                </div>
+
+
+                <!-- Contraseña -->
+                <div class="form-group">
+
+                    <label for="password">
+                        Contraseña
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">●</span>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Crea una contraseña"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="toggle-password"
+                            id="togglePassword"
+                            aria-label="Mostrar contraseña">
+
+                            Mostrar
+
+                        </button>
+
+                    </div>
+
+                    <div class="password-strength">
+
+                        <div class="strength-bar">
+                            <span id="strengthProgress"></span>
+                        </div>
+
+                        <span id="strengthText">
+                            Seguridad de la contraseña
+                        </span>
+
+                    </div>
+
+                    <small
+                        class="error-message"
+                        id="passwordError">
+                    </small>
+
+                </div>
+
+
+                <!-- Confirmar contraseña -->
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+                        Confirmar contraseña
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">●</span>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Repite tu contraseña"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="toggle-password"
+                            id="toggleConfirmPassword"
+                            aria-label="Mostrar contraseña">
+
+                            Mostrar
+
+                        </button>
+
+                    </div>
+
+                    <small
+                        class="error-message"
+                        id="confirmPasswordError">
+                    </small>
+
+                </div>
+
+
+                <!-- Términos -->
+                <div class="terms-group">
+
+                    <label class="checkbox-container">
+
+                        <input
+                            type="checkbox"
+                            id="terminos"
+                            name="terminos"
+                            required
+                        >
+
+                        <span class="checkmark"></span>
+
+                        <span class="terms-text">
+                            Acepto los
+                            <a href="#" id="terminosLink">
+                                términos y condiciones
+                            </a>
+                            de ZentryX.
+                        </span>
+
+                    </label>
+
+                    <small
+                        class="error-message"
+                        id="terminosError">
+                    </small>
+
+                </div>
+
+
+                <!-- Mensaje general -->
+                <div
+                    id="formMessage"
+                    class="form-message"
+                    role="alert">
+                </div>
+
+
+                <!-- Botón -->
+                <button
+                    type="submit"
+                    id="btnRegistro"
+                    class="btn-registro">
+
+                    <span id="btnText">
+                        Crear cuenta
+                    </span>
+
+                    <span
+                        id="btnLoader"
+                        class="loader"
+                        hidden>
+                    </span>
+
+                </button>
+
+            </form>
+
+
+            <!-- Login -->
+            <div class="login-link">
+
+                <span>¿Ya tienes una cuenta?</span>
+
+                <a href="login.html">
+                    Iniciar sesión
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Modal de términos -->
+    <div
+        class="modal"
+        id="terminosModal"
+        aria-hidden="true">
+
+        <div class="modal-overlay" id="modalOverlay"></div>
+
+        <div
+            class="modal-content"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitle">
+
+            <button
+                type="button"
+                class="modal-close"
+                id="modalClose"
+                aria-label="Cerrar">
+
+                &times;
+
+            </button>
+
+            <h2 id="modalTitle">
+                Términos y condiciones
+            </h2>
+
+            <div class="modal-body">
+
+                <p>
+                    Al crear una cuenta en ZentryX aceptas utilizar
+                    la plataforma de manera responsable.
+                </p>
+
+                <p>
+                    La información proporcionada durante el registro
+                    debe ser correcta y corresponder al usuario que
+                    crea la cuenta.
+                </p>
+
+                <p>
+                    ZentryX podrá utilizar los datos necesarios para
+                    gestionar la cuenta y proporcionar las funciones
+                    disponibles dentro de la plataforma.
+                </p>
+
+            </div>
+
+            <button
+                type="button"
+                class="modal-button"
+                id="acceptTerms">
+
+                Aceptar
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="../js/registro.js"></script>
+
+</body>
+</html>

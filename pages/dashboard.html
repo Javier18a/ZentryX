@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Panel principal de ZentryX">
+
+    <title>ZentryX | Dashboard</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         CONTENEDOR PRINCIPAL
+    ====================================================== -->
+
+    <div class="app-container">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside class="sidebar" id="sidebar">
+
+            <!-- HEADER -->
+
+            <div class="sidebar-header">
+
+                <a href="dashboard.html" class="logo">
+                    Zentry<span>X</span>
+                </a>
+
+
+                <button class="sidebar-close" id="sidebarClose" type="button" aria-label="Cerrar menú">
+                    ×
+                </button>
+
+            </div>
+
+
+            <!-- PERFIL -->
+
+            <div class="sidebar-profile">
+
+                <div class="profile-avatar" id="profileAvatar">
+                    U
+                </div>
+
+
+                <div class="profile-info">
+
+                    <strong id="sidebarUserName">
+                        Usuario
+                    </strong>
+
+                    <span id="sidebarUserRole">
+                        Usuario
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- NAVEGACIÓN -->
+
+            <!-- =================================================
+     NAVEGACIÓN PRINCIPAL
+================================================== -->
+
+            <nav class="sidebar-nav">
+
+                <!-- =================================================
+         PRINCIPAL
+    ================================================== -->
+
+                <div class="nav-title">
+                    PRINCIPAL
+                </div>
+
+                <a href="dashboard.html" class="nav-item active">
+                    <span class="nav-icon">
+                        <i class="icon-home"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Inicio
+                    </span>
+                </a>
+
+
+                <!-- =================================================
+         EXPLORAR
+    ================================================== -->
+
+                <div class="nav-title">
+                    EXPLORAR
+                </div>
+
+                <a href="servicios.html" class="nav-item">
+                    <span class="nav-icon">
+                        <i class="icon-search"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Explorar servicios
+                    </span>
+                </a>
+
+
+                <a href="categorias.html" class="nav-item">
+                    <span class="nav-icon">
+                        <i class="icon-grid"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Categorías
+                    </span>
+                </a>
+
+
+                <!-- =================================================
+         SERVICIOS
+    ================================================== -->
+
+                <div class="nav-title">
+                    SERVICIOS
+                </div>
+
+                <a href="publicar-servicio.html" class="nav-item">
+                    <span class="nav-icon">
+                        <i class="icon-plus"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Publicar servicio
+                    </span>
+                </a>
+
+
+                <a href="mis-servicios.html" class="nav-item">
+                    <span class="nav-icon">
+                        <i class="icon-list"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mis servicios
+                    </span>
+                </a>
+
+
+                <a href="mis-solicitudes.html" class="nav-item">
+                    <span class="nav-icon">
+                        <i class="icon-clock"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mis solicitudes
+                    </span>
+                </a>
+
+
+                <!-- =================================================
+         COMUNIDAD
+    ================================================== -->
+
+                <div class="nav-title">
+                    COMUNIDAD
+                </div>
+
+                <a href="favoritos.html" class="nav-item">
+                    <span class="nav-icon">
+                        <i class="icon-heart"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Favoritos
+                    </span>
+                </a>
+
+
+                <a href="mensajes.html" class="nav-item">
+                    <span class="nav-icon">
+                        <i class="icon-message"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mensajes
+                    </span>
+                </a>
+
+
+                <!-- =================================================
+         CUENTA
+    ================================================== -->
+
+                <div class="nav-title">
+                    CUENTA
+                </div>
+
+                <a href="perfil.html" class="nav-item">
+                    <span class="nav-icon">
+                        <i class="icon-user"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mi perfil
+                    </span>
+                </a>
+
+
+                <a href="configuracion.html" class="nav-item">
+                    <span class="nav-icon">
+                        <i class="icon-settings"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Configuración
+                    </span>
+                </a>
+
+
+                <a href="perfil.html#seguridad" class="nav-item">
+                    <span class="nav-icon">
+                        <i class="icon-shield"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Seguridad
+                    </span>
+                </a>
+
+
+                <!-- =================================================
+         CERRAR SESIÓN
+    ================================================== -->
+
+                <button class="nav-item logout-button" id="logoutButton" type="button">
+
+                    <span class="nav-icon">
+                        <i class="icon-logout"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Cerrar sesión
+                    </span>
+
+                </button>
+
+            </nav>
+
+
+            <!-- FOOTER -->
+
+            <div class="sidebar-footer">
+
+                <small>
+                    ZentryX
+                </small>
+
+                <span>
+                    Sistema de gestión
+                </span>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =================================================
+             OVERLAY
+        ================================================== -->
+
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+        <!-- =================================================
+             CONTENIDO PRINCIPAL
+        ================================================== -->
+
+        <main class="main-content">
+
+
+            <!-- =============================================
+                 TOPBAR
+            ============================================== -->
+
+            <header class="topbar">
+
+
+                <div class="topbar-left">
+
+                    <button class="menu-button" id="menuButton" type="button" aria-label="Abrir menú">
+                        ☰
+                    </button>
+
+
+                    <div>
+
+                        <span class="page-label">
+                            ZENTRYX
+                        </span>
+
+                        <h1>
+                            Dashboard
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================================
+                     TOPBAR RIGHT
+                ========================================== -->
+
+                <div class="topbar-right">
+
+
+                    <!-- NOTIFICACIONES -->
+
+                    <button class="notification-button" id="notificationButton" type="button"
+                        aria-label="Notificaciones">
+
+                        ♢
+
+                        <span class="notification-dot" id="notificationDot"></span>
+
+                    </button>
+
+
+                    <!-- USUARIO -->
+
+                    <a href="perfil.html" class="topbar-user">
+
+                        <div class="topbar-avatar" id="topbarAvatar">
+                            U
+                        </div>
+
+
+                        <div class="topbar-user-info">
+
+                            <strong id="topbarUserName">
+                                Usuario
+                            </strong>
+
+                            <span id="topbarUserEmail">
+                                usuario@email.com
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =============================================
+                 DASHBOARD
+            ============================================== -->
+
+            <section class="dashboard-content">
+
+
+                <!-- =========================================
+                     BIENVENIDA
+                ========================================== -->
+
+                <section class="welcome-section">
+
+                    <div>
+
+                        <span>
+                            PANEL PRINCIPAL
+                        </span>
+
+                        <h2>
+                            Hola,
+                            <strong id="welcomeName">
+                                Usuario
+                            </strong>
+                            👋
+                        </h2>
+
+                        <p>
+                            Bienvenido nuevamente a
+                            tu espacio de ZentryX.
+                        </p>
+
+                    </div>
+
+
+                    <div class="welcome-date">
+
+                        <span>
+                            HOY
+                        </span>
+
+                        <strong id="currentDate">
+                            --
+                        </strong>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =========================================
+                     ESTADÍSTICAS
+                ========================================== -->
+
+                <section class="stats-grid">
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-icon purple">
+                            ◉
+                        </div>
+
+                        <div class="stat-content">
+
+                            <span>
+                                ESTADO
+                            </span>
+
+                            <strong id="accountStatus">
+                                Activo
+                            </strong>
+
+                            <small>
+                                Cuenta operativa
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-icon green">
+                            ✓
+                        </div>
+
+                        <div class="stat-content">
+
+                            <span>
+                                SEGURIDAD
+                            </span>
+
+                            <strong>
+                                Protegida
+                            </strong>
+
+                            <small>
+                                Cuenta verificada
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-icon blue">
+                            ◈
+                        </div>
+
+                        <div class="stat-content">
+
+                            <span>
+                                ROL
+                            </span>
+
+                            <strong id="accountRole">
+                                Usuario
+                            </strong>
+
+                            <small>
+                                Nivel de acceso
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-icon orange">
+                            ◷
+                        </div>
+
+                        <div class="stat-content">
+
+                            <span>
+                                MIEMBRO DESDE
+                            </span>
+
+                            <strong id="memberSince">
+                                --
+                            </strong>
+
+                            <small>
+                                Fecha de registro
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     CONTENIDO PRINCIPAL
+                ========================================== -->
+
+                <section class="dashboard-grid">
+
+
+                    <!-- =====================================
+                         ACTIVIDAD
+                    ====================================== -->
+
+                    <article class="dashboard-card activity-card">
+
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span>
+                                    ACTIVIDAD
+                                </span>
+
+                                <h3>
+                                    Actividad reciente
+                                </h3>
+
+                            </div>
+
+
+                            <a href="perfil.html" class="card-link">
+                                Ver perfil
+                            </a>
+
+                        </div>
+
+
+                        <div class="activity-list" id="activityList">
+
+                            <!-- JS -->
+
+                        </div>
+
+
+                    </article>
+
+
+
+                    <!-- =====================================
+                         ACCIONES
+                    ====================================== -->
+
+                    <article class="dashboard-card quick-card">
+
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span>
+                                    ACCESO RÁPIDO
+                                </span>
+
+                                <h3>
+                                    Acciones
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="quick-actions">
+
+
+                            <a href="perfil.html" class="quick-action">
+
+                                <div class="quick-icon">
+                                    ◉
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Mi perfil
+                                    </strong>
+
+                                    <span>
+                                        Administrar información
+                                    </span>
+
+                                </div>
+
+                                <b>
+                                    →
+                                </b>
+
+                            </a>
+
+
+
+                            <a href="perfil.html#seguridad" class="quick-action">
+
+                                <div class="quick-icon">
+                                    ◈
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Seguridad
+                                    </strong>
+
+                                    <span>
+                                        Gestionar contraseña
+                                    </span>
+
+                                </div>
+
+                                <b>
+                                    →
+                                </b>
+
+                            </a>
+
+
+
+                            <button class="quick-action" id="notificationQuickButton" type="button">
+
+                                <div class="quick-icon">
+                                    ♢
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Notificaciones
+                                    </strong>
+
+                                    <span>
+                                        Revisar novedades
+                                    </span>
+
+                                </div>
+
+                                <b>
+                                    →
+                                </b>
+
+                            </button>
+
+
+                        </div>
+
+
+                    </article>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     INFORMACIÓN DE CUENTA
+                ========================================== -->
+
+                <section class="dashboard-card account-card">
+
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span>
+                                INFORMACIÓN
+                            </span>
+
+                            <h3>
+                                Resumen de cuenta
+                            </h3>
+
+                        </div>
+
+
+                        <a href="perfil.html" class="edit-account">
+                            Administrar cuenta
+                        </a>
+
+                    </div>
+
+
+                    <div class="account-grid">
+
+
+                        <div class="account-item">
+
+                            <span>
+                                NOMBRE COMPLETO
+                            </span>
+
+                            <strong id="accountFullName">
+                                --
+                            </strong>
+
+                        </div>
+
+
+                        <div class="account-item">
+
+                            <span>
+                                USUARIO
+                            </span>
+
+                            <strong id="accountUsername">
+                                --
+                            </strong>
+
+                        </div>
+
+
+                        <div class="account-item">
+
+                            <span>
+                                CORREO
+                            </span>
+
+                            <strong id="accountEmail">
+                                --
+                            </strong>
+
+                        </div>
+
+
+                        <div class="account-item">
+
+                            <span>
+                                IDENTIFICADOR
+                            </span>
+
+                            <strong id="accountId">
+                                --
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         PANEL DE NOTIFICACIONES
+    ====================================================== -->
+
+    <div class="notification-panel" id="notificationPanel">
+
+        <div class="notification-header">
+
+            <div>
+
+                <span>
+                    ZENTRYX
+                </span>
+
+                <h3>
+                    Notificaciones
+                </h3>
+
+            </div>
+
+
+            <button id="closeNotifications" type="button">
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="notification-list" id="notificationList">
+
+            <div class="notification-empty">
+
+                <div>
+                    ♢
+                </div>
+
+                <p>
+                    No tienes notificaciones nuevas.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         MODAL LOGOUT
+    ====================================================== -->
+
+    <div class="modal" id="logoutModal">
+
+        <div class="modal-overlay" id="logoutModalOverlay"></div>
+
+
+        <div class="modal-content">
+
+            <div class="modal-icon">
+                ↪
+            </div>
+
+
+            <h2>
+                Cerrar sesión
+            </h2>
+
+
+            <p>
+                ¿Estás seguro de que deseas
+                cerrar tu sesión de ZentryX?
+            </p>
+
+
+            <div class="modal-actions">
+
+                <button class="modal-cancel" id="cancelLogout" type="button">
+                    Cancelar
+                </button>
+
+
+                <button class="modal-confirm" id="confirmLogout" type="button">
+                    Cerrar sesión
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         TOAST
+    ====================================================== -->
+
+    <div class="toast" id="toast">
+
+        <div class="toast-icon" id="toastIcon">
+            ✓
+        </div>
+
+
+        <div>
+
+            <strong id="toastTitle">
+                Correcto
+            </strong>
+
+            <p id="toastMessage">
+                Operación realizada.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>

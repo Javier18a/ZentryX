@@ -1,0 +1,1032 @@
+/* =========================================================
+   ZENTRYX - REGISTRO
+   registro.css
+   ========================================================= */
+
+
+/* =========================================================
+   VARIABLES
+   ========================================================= */
+
+:root {
+    --primary: #6c5ce7;
+    --primary-dark: #5849d6;
+    --primary-light: #8b7ff0;
+
+    --background: #f5f6fa;
+    --surface: #ffffff;
+
+    --text: #1f2430;
+    --text-light: #737986;
+
+    --border: #e1e4ea;
+    --border-focus: #6c5ce7;
+
+    --success: #20b486;
+    --error: #e74c3c;
+    --warning: #f39c12;
+
+    --shadow: 0 20px 60px rgba(31, 36, 48, 0.12);
+
+    --radius: 18px;
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+}
+
+
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+   ========================================================= */
+
+.registro-container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+
+/* =========================================================
+   PANEL INFORMACIÓN
+   ========================================================= */
+
+.registro-info {
+    position: relative;
+
+    min-height: 100vh;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(139, 127, 240, 0.35),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(108, 92, 231, 0.30),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            #171a2b,
+            #252849 55%,
+            #30346a
+        );
+
+    color: white;
+}
+
+
+/* Decoraciones */
+
+.registro-info::before {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    top: -150px;
+    right: -150px;
+}
+
+.registro-info::after {
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255, 255, 255, 0.05);
+
+    bottom: -250px;
+    left: -200px;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.logo {
+    position: relative;
+    z-index: 2;
+
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.logo span,
+.mobile-logo span {
+    color: var(--primary-light);
+}
+
+
+/* =========================================================
+   CONTENIDO INFO
+   ========================================================= */
+
+.info-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 520px;
+}
+
+.info-content h1 {
+    font-size: clamp(36px, 4vw, 58px);
+    line-height: 1.08;
+
+    margin-bottom: 20px;
+
+    letter-spacing: -2px;
+}
+
+.info-content > p {
+    max-width: 450px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================================================
+   BENEFICIOS
+   ========================================================= */
+
+.beneficios {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.beneficio {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 16px;
+}
+
+.beneficio-icono {
+    flex-shrink: 0;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    color: #ffffff;
+
+    font-weight: bold;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.beneficio h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.beneficio p {
+    color: rgba(255, 255, 255, 0.62);
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   FOOTER INFO
+   ========================================================= */
+
+.info-footer {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    gap: 20px;
+
+    color: rgba(255, 255, 255, 0.45);
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   PANEL FORMULARIO
+   ========================================================= */
+
+.registro-formulario {
+    min-height: 100vh;
+
+    padding: 60px 9%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: var(--surface);
+}
+
+
+/* =========================================================
+   HEADER FORMULARIO
+   ========================================================= */
+
+.form-header {
+    max-width: 620px;
+    width: 100%;
+
+    margin: 0 auto 35px;
+}
+
+.form-header h2 {
+    font-size: 34px;
+    line-height: 1.2;
+
+    margin-bottom: 10px;
+
+    letter-spacing: -1px;
+}
+
+.form-header p {
+    color: var(--text-light);
+
+    font-size: 14px;
+}
+
+.mobile-logo {
+    display: none;
+}
+
+
+/* =========================================================
+   FORMULARIO
+   ========================================================= */
+
+#registroForm {
+    width: 100%;
+    max-width: 620px;
+
+    margin: 0 auto;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--text);
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   INPUTS
+   ========================================================= */
+
+.input-wrapper {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    height: 50px;
+
+    padding: 0 15px;
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: var(--text);
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.input-wrapper input {
+    padding-left: 43px !important;
+}
+
+.form-group input:focus {
+    border-color: var(--border-focus);
+
+    box-shadow:
+        0 0 0 3px rgba(108, 92, 231, 0.10);
+}
+
+.form-group input::placeholder {
+    color: #a8adb7;
+}
+
+
+/* =========================================================
+   ICONOS INPUT
+   ========================================================= */
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+
+    color: #9da2ad;
+
+    font-size: 14px;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   MOSTRAR CONTRASEÑA
+   ========================================================= */
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+
+    border: none;
+    background: transparent;
+
+    color: var(--primary);
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.toggle-password:hover {
+    color: var(--primary-dark);
+}
+
+
+/* =========================================================
+   HINTS
+   ========================================================= */
+
+.input-hint {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #9a9faa;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   MENSAJES DE ERROR
+   ========================================================= */
+
+.error-message {
+    display: block;
+
+    min-height: 16px;
+
+    margin-top: 5px;
+
+    color: var(--error);
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   ESTADOS DE INPUT
+   ========================================================= */
+
+.form-group.input-error input {
+    border-color: var(--error);
+
+    box-shadow:
+        0 0 0 3px rgba(231, 76, 60, 0.08);
+}
+
+.form-group.input-success input {
+    border-color: var(--success);
+}
+
+
+/* =========================================================
+   SEGURIDAD CONTRASEÑA
+   ========================================================= */
+
+.password-strength {
+    margin-top: 8px;
+}
+
+.strength-bar {
+    width: 100%;
+    height: 4px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #e8e9ed;
+}
+
+.strength-bar span {
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    border-radius: inherit;
+
+    transition:
+        width 0.3s ease,
+        background 0.3s ease;
+}
+
+#strengthText {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #9a9faa;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   TÉRMINOS
+   ========================================================= */
+
+.terms-group {
+    margin-top: 2px;
+    margin-bottom: 18px;
+}
+
+.checkbox-container {
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    cursor: pointer;
+
+    color: var(--text-light);
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.checkbox-container input {
+    position: absolute;
+
+    opacity: 0;
+
+    cursor: pointer;
+}
+
+.checkmark {
+    flex-shrink: 0;
+
+    width: 18px;
+    height: 18px;
+
+    margin-top: 1px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 5px;
+
+    background: white;
+
+    transition: 0.2s ease;
+}
+
+.checkbox-container input:checked + .checkmark {
+    background: var(--primary);
+
+    border-color: var(--primary);
+}
+
+.checkbox-container input:checked + .checkmark::after {
+    content: "✓";
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+
+    color: white;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.checkbox-container.error .checkmark {
+    border-color: var(--error);
+}
+
+.terms-text a {
+    color: var(--primary);
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.terms-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   MENSAJE GENERAL
+   ========================================================= */
+
+.form-message {
+    display: none;
+
+    width: 100%;
+
+    margin-bottom: 15px;
+    padding: 12px 14px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.form-message.success {
+    display: block;
+
+    background: rgba(32, 180, 134, 0.10);
+
+    border: 1px solid rgba(32, 180, 134, 0.20);
+
+    color: #168565;
+}
+
+.form-message.error {
+    display: block;
+
+    background: rgba(231, 76, 60, 0.08);
+
+    border: 1px solid rgba(231, 76, 60, 0.15);
+
+    color: #c0392b;
+}
+
+
+/* =========================================================
+   BOTÓN REGISTRO
+   ========================================================= */
+
+.btn-registro {
+    width: 100%;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 10px;
+
+    background: var(--primary);
+
+    color: white;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.btn-registro:hover {
+    background: var(--primary-dark);
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 8px 20px rgba(108, 92, 231, 0.20);
+}
+
+.btn-registro:active {
+    transform: translateY(0);
+}
+
+.btn-registro:disabled {
+    opacity: 0.7;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+/* =========================================================
+   LOADER
+   ========================================================= */
+
+.loader {
+    width: 19px;
+    height: 19px;
+
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-top-color: white;
+
+    border-radius: 50%;
+
+    animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================================================
+   LOGIN
+   ========================================================= */
+
+.login-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    margin-top: 25px;
+
+    color: var(--text-light);
+
+    font-size: 12px;
+}
+
+.login-link a {
+    color: var(--primary);
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   MODAL
+   ========================================================= */
+
+.modal {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(12, 14, 25, 0.65);
+
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 500px;
+
+    max-height: 80vh;
+
+    overflow-y: auto;
+
+    padding: 35px;
+
+    border-radius: var(--radius);
+
+    background: white;
+
+    box-shadow: var(--shadow);
+
+    animation: modalIn 0.25s ease;
+}
+
+@keyframes modalIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modal-close {
+    position: absolute;
+
+    top: 15px;
+    right: 18px;
+
+    width: 32px;
+    height: 32px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #f1f2f5;
+
+    color: var(--text-light);
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    background: #e7e8ed;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+
+    font-size: 24px;
+}
+
+.modal-body {
+    color: var(--text-light);
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.modal-body p {
+    margin-bottom: 15px;
+}
+
+.modal-button {
+    width: 100%;
+    height: 45px;
+
+    margin-top: 10px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: var(--primary);
+
+    color: white;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.modal-button:hover {
+    background: var(--primary-dark);
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .registro-container {
+        grid-template-columns: 40% 60%;
+    }
+
+    .registro-info {
+        padding: 40px 30px;
+    }
+
+    .registro-formulario {
+        padding: 45px 35px;
+    }
+
+    .info-content h1 {
+        font-size: 40px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - MÓVIL
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+    body {
+        background: white;
+    }
+
+    .registro-container {
+        display: block;
+    }
+
+
+    /* Ocultar panel lateral */
+
+    .registro-info {
+        display: none;
+    }
+
+
+    /* Formulario */
+
+    .registro-formulario {
+        min-height: 100vh;
+
+        padding: 35px 22px;
+
+        justify-content: flex-start;
+    }
+
+
+    /* Logo móvil */
+
+    .mobile-logo {
+        display: block;
+
+        margin-bottom: 35px;
+
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: -1px;
+    }
+
+
+    .form-header {
+        margin-bottom: 30px;
+    }
+
+    .form-header h2 {
+        font-size: 29px;
+    }
+
+
+    /* Campos */
+
+    .form-row {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+
+    .form-group {
+        margin-bottom: 17px;
+    }
+
+
+    /* Login */
+
+    .login-link {
+        margin-bottom: 20px;
+    }
+
+}
+
+
+/* =========================================================
+   MÓVILES PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .registro-formulario {
+        padding: 28px 17px;
+    }
+
+    .form-header h2 {
+        font-size: 26px;
+    }
+
+    .form-header p {
+        font-size: 13px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"] {
+        height: 48px;
+    }
+
+    .btn-registro {
+        height: 50px;
+    }
+
+    .modal-content {
+        padding: 28px 22px;
+    }
+
+}
