@@ -1,0 +1,1839 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>ZentryX | Mis solicitudes</title>
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- SOLICITUDES CSS -->
+    <link
+        rel="stylesheet"
+        href="../css/solicitudes.css">
+
+</head>
+
+
+<body>
+
+    <!-- =========================================================
+         APP
+    ========================================================== -->
+
+    <div class="app-container">
+
+
+        <!-- =====================================================
+             SIDEBAR
+        ====================================================== -->
+
+        <aside
+            class="sidebar"
+            id="sidebar">
+
+
+            <!-- SIDEBAR HEADER -->
+
+            <div class="sidebar-header">
+
+                <div class="logo">
+                    Zentry<span>X</span>
+                </div>
+
+
+                <button
+                    class="sidebar-close"
+                    id="sidebarClose"
+                    type="button"
+                    aria-label="Cerrar menú">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- SIDEBAR PROFILE -->
+
+            <div class="sidebar-profile">
+
+                <div
+                    class="profile-avatar"
+                    id="profileAvatar">
+
+                    U
+
+                </div>
+
+
+                <div class="profile-info">
+
+                    <strong id="sidebarUserName">
+                        Usuario
+                    </strong>
+
+                    <span id="sidebarUserRole">
+                        Usuario
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 NAVIGATION
+            ================================================== -->
+
+            <nav class="sidebar-nav">
+
+
+                <!-- PRINCIPAL -->
+
+                <div class="nav-title">
+                    PRINCIPAL
+                </div>
+
+
+                <a
+                    href="dashboard.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-house"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Inicio
+                    </span>
+
+                </a>
+
+
+                <!-- EXPLORAR -->
+
+                <div class="nav-title">
+                    EXPLORAR
+                </div>
+
+
+                <a
+                    href="servicios.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Explorar servicios
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="categorias.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-grip"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Categorías
+                    </span>
+
+                </a>
+
+
+                <!-- SERVICIOS -->
+
+                <div class="nav-title">
+                    SERVICIOS
+                </div>
+
+
+                <a
+                    href="publicar-servicio.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Publicar servicio
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="mis-servicios.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-list"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mis servicios
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="mis-solicitudes.html"
+                    class="nav-item active">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mis solicitudes
+                    </span>
+
+                </a>
+
+
+                <!-- COMUNIDAD -->
+
+                <div class="nav-title">
+                    COMUNIDAD
+                </div>
+
+
+                <a
+                    href="mensajes.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-message"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mensajes
+                    </span>
+
+                </a>
+
+
+                <!-- CUENTA -->
+
+                <div class="nav-title">
+                    CUENTA
+                </div>
+
+
+                <a
+                    href="perfil.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mi perfil
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="configuracion.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-gear"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Configuración
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="perfil.html#seguridad"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Seguridad
+                    </span>
+
+                </a>
+
+
+                <!-- CERRAR SESIÓN -->
+
+                <button
+                    class="nav-item logout-button"
+                    id="logoutButton"
+                    type="button">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Cerrar sesión
+                    </span>
+
+                </button>
+
+
+            </nav>
+
+
+            <!-- SIDEBAR FOOTER -->
+
+            <div class="sidebar-footer">
+
+                <small>
+                    ZentryX
+                </small>
+
+                <span>
+                    Plataforma de servicios
+                </span>
+
+            </div>
+
+
+        </aside>
+
+
+        <!-- =====================================================
+             OVERLAY SIDEBAR
+        ====================================================== -->
+
+        <div
+            class="sidebar-overlay"
+            id="sidebarOverlay">
+        </div>
+
+
+        <!-- =====================================================
+             MAIN
+        ====================================================== -->
+
+        <main class="main-content">
+
+
+            <!-- =================================================
+                 TOPBAR
+            ================================================== -->
+
+            <header class="topbar">
+
+
+                <!-- TOPBAR LEFT -->
+
+                <div class="topbar-left">
+
+
+                    <button
+                        class="menu-button"
+                        id="menuButton"
+                        type="button"
+                        aria-label="Abrir menú">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+
+                    <div>
+
+                        <span class="page-label">
+                            SERVICIOS
+                        </span>
+
+                        <h1>
+                            Mis solicitudes
+                        </h1>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- TOPBAR RIGHT -->
+
+                <div class="topbar-right">
+
+
+                    <!-- NOTIFICATIONS -->
+
+                    <button
+                        class="notification-button"
+                        id="notificationButton"
+                        type="button"
+                        aria-label="Notificaciones">
+
+                        <i class="fa-solid fa-bell"></i>
+
+                        <span
+                            class="notification-dot"
+                            id="notificationDot">
+                        </span>
+
+                    </button>
+
+
+                    <!-- USER -->
+
+                    <div class="topbar-user">
+
+
+                        <div
+                            class="topbar-avatar"
+                            id="topbarAvatar">
+
+                            U
+
+                        </div>
+
+
+                        <div class="topbar-user-info">
+
+                            <strong id="topbarUserName">
+                                Usuario
+                            </strong>
+
+                            <span id="topbarUserEmail">
+                                Sin correo
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </header>
+
+
+            <!-- =================================================
+                 CONTENT
+            ================================================== -->
+
+            <div class="requests-content">
+
+
+                <!-- =================================================
+                     PAGE HEADER
+                ================================================== -->
+
+                <section class="requests-header">
+
+
+                    <div class="requests-heading">
+
+                        <span>
+                            SOLICITUDES
+                        </span>
+
+                        <h2>
+                            Mis solicitudes
+                        </h2>
+
+                        <p>
+                            Consulta y administra las solicitudes
+                            de servicios que has enviado.
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="btn-primary"
+                        id="newRequestButton">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Nueva solicitud
+
+                    </button>
+
+
+                </section>
+
+
+                <!-- =================================================
+                     SUMMARY
+                ================================================== -->
+
+                <section class="request-summary">
+
+
+                    <div class="summary-card">
+
+                        <div class="summary-icon purple">
+
+                            <i class="fa-solid fa-layer-group"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                TOTAL
+                            </span>
+
+                            <strong id="totalRequests">
+                                0
+                            </strong>
+
+                            <small>
+                                Solicitudes realizadas
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="summary-card">
+
+                        <div class="summary-icon orange">
+
+                            <i class="fa-solid fa-clock"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                PENDIENTES
+                            </span>
+
+                            <strong id="pendingRequests">
+                                0
+                            </strong>
+
+                            <small>
+                                Esperando revisión
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="summary-card">
+
+                        <div class="summary-icon blue">
+
+                            <i class="fa-solid fa-spinner"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                EN PROCESO
+                            </span>
+
+                            <strong id="processingRequests">
+                                0
+                            </strong>
+
+                            <small>
+                                Actualmente activas
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="summary-card">
+
+                        <div class="summary-icon green">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                COMPLETADAS
+                            </span>
+
+                            <strong id="completedRequests">
+                                0
+                            </strong>
+
+                            <small>
+                                Solicitudes finalizadas
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                </section>
+
+
+                <!-- =================================================
+                     REQUESTS CARD
+                ================================================== -->
+
+                <section class="requests-card">
+
+
+                    <!-- CARD HEADER -->
+
+                    <div class="requests-card-header">
+
+
+                        <div>
+
+                            <span>
+                                HISTORIAL
+                            </span>
+
+                            <h3>
+                                Solicitudes realizadas
+                            </h3>
+
+                        </div>
+
+
+                        <div class="request-controls">
+
+
+                            <!-- SEARCH -->
+
+                            <div class="search-box">
+
+                                <i class="fa-solid fa-magnifying-glass"></i>
+
+                                <input
+                                    type="search"
+                                    id="requestSearch"
+                                    placeholder="Buscar solicitud..."
+                                    autocomplete="off">
+
+                            </div>
+
+
+                            <!-- FILTER -->
+
+                            <div class="select-wrapper filter-wrapper">
+
+                                <select
+                                    id="requestFilter">
+
+                                    <option value="all">
+                                        Todas
+                                    </option>
+
+                                    <option value="pending">
+                                        Pendientes
+                                    </option>
+
+                                    <option value="processing">
+                                        En proceso
+                                    </option>
+
+                                    <option value="completed">
+                                        Completadas
+                                    </option>
+
+                                    <option value="cancelled">
+                                        Canceladas
+                                    </option>
+
+                                </select>
+
+                                <i class="fa-solid fa-chevron-down"></i>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- REQUEST LIST -->
+
+                    <div
+                        class="request-list"
+                        id="requestList">
+
+
+                        <!-- REQUEST 1 -->
+
+                        <article
+                            class="request-item"
+                            data-status="processing">
+
+
+                            <div class="request-item-main">
+
+
+                                <div class="request-service-icon purple">
+
+                                    <i class="fa-solid fa-code"></i>
+
+                                </div>
+
+
+                                <div class="request-item-content">
+
+
+                                    <div class="request-item-top">
+
+
+                                        <div>
+
+                                            <span class="request-code">
+                                                ZX-00125
+                                            </span>
+
+                                            <h4>
+                                                Desarrollo de sitio web
+                                            </h4>
+
+                                        </div>
+
+
+                                        <span
+                                            class="status status-processing">
+
+                                            En proceso
+
+                                        </span>
+
+
+                                    </div>
+
+
+                                    <p>
+                                        Desarrollo de plataforma web
+                                        empresarial para ZentryX.
+                                    </p>
+
+
+                                    <div class="request-meta">
+
+                                        <span>
+                                            <i class="fa-solid fa-calendar"></i>
+                                            12 Ago 2026
+                                        </span>
+
+                                        <span>
+                                            <i class="fa-solid fa-layer-group"></i>
+                                            Desarrollo web
+                                        </span>
+
+                                        <span>
+                                            <i class="fa-solid fa-flag"></i>
+                                            Alta
+                                        </span>
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                            <button
+                                type="button"
+                                class="request-action"
+                                data-request-id="ZX-00125">
+
+                                Ver detalle
+
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </button>
+
+
+                        </article>
+
+
+                        <!-- REQUEST 2 -->
+
+                        <article
+                            class="request-item"
+                            data-status="pending">
+
+
+                            <div class="request-item-main">
+
+
+                                <div class="request-service-icon blue">
+
+                                    <i class="fa-solid fa-palette"></i>
+
+                                </div>
+
+
+                                <div class="request-item-content">
+
+
+                                    <div class="request-item-top">
+
+
+                                        <div>
+
+                                            <span class="request-code">
+                                                ZX-00124
+                                            </span>
+
+                                            <h4>
+                                                Diseño de identidad visual
+                                            </h4>
+
+                                        </div>
+
+
+                                        <span
+                                            class="status status-pending">
+
+                                            Pendiente
+
+                                        </span>
+
+
+                                    </div>
+
+
+                                    <p>
+                                        Diseño de identidad visual
+                                        para una nueva marca.
+                                    </p>
+
+
+                                    <div class="request-meta">
+
+                                        <span>
+                                            <i class="fa-solid fa-calendar"></i>
+                                            10 Ago 2026
+                                        </span>
+
+                                        <span>
+                                            <i class="fa-solid fa-layer-group"></i>
+                                            Diseño
+                                        </span>
+
+                                        <span>
+                                            <i class="fa-solid fa-flag"></i>
+                                            Media
+                                        </span>
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                            <button
+                                type="button"
+                                class="request-action"
+                                data-request-id="ZX-00124">
+
+                                Ver detalle
+
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </button>
+
+
+                        </article>
+
+
+                        <!-- REQUEST 3 -->
+
+                        <article
+                            class="request-item"
+                            data-status="completed">
+
+
+                            <div class="request-item-main">
+
+
+                                <div class="request-service-icon green">
+
+                                    <i class="fa-solid fa-gears"></i>
+
+                                </div>
+
+
+                                <div class="request-item-content">
+
+
+                                    <div class="request-item-top">
+
+
+                                        <div>
+
+                                            <span class="request-code">
+                                                ZX-00123
+                                            </span>
+
+                                            <h4>
+                                                Automatización empresarial
+                                            </h4>
+
+                                        </div>
+
+
+                                        <span
+                                            class="status status-completed">
+
+                                            Completada
+
+                                        </span>
+
+
+                                    </div>
+
+
+                                    <p>
+                                        Automatización de procesos
+                                        internos de la empresa.
+                                    </p>
+
+
+                                    <div class="request-meta">
+
+                                        <span>
+                                            <i class="fa-solid fa-calendar"></i>
+                                            05 Ago 2026
+                                        </span>
+
+                                        <span>
+                                            <i class="fa-solid fa-layer-group"></i>
+                                            Automatización
+                                        </span>
+
+                                        <span>
+                                            <i class="fa-solid fa-flag"></i>
+                                            Baja
+                                        </span>
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                            <button
+                                type="button"
+                                class="request-action"
+                                data-request-id="ZX-00123">
+
+                                Ver detalle
+
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </button>
+
+
+                        </article>
+
+
+                        <!-- EMPTY STATE -->
+
+                        <div
+                            class="empty-requests"
+                            id="emptyRequests"
+                            hidden>
+
+                            <div class="empty-requests-icon">
+
+                                <i class="fa-solid fa-file-circle-question"></i>
+
+                            </div>
+
+                            <h3>
+                                No encontramos solicitudes
+                            </h3>
+
+                            <p>
+                                No hay solicitudes que coincidan
+                                con tu búsqueda o filtro.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+            </div>
+
+
+        </main>
+
+
+    </div>
+
+
+    <!-- =========================================================
+         MODAL NUEVA SOLICITUD
+    ========================================================== -->
+
+    <div
+        class="modal-overlay"
+        id="requestModal">
+
+
+        <div class="modal request-modal">
+
+
+            <div class="modal-header">
+
+
+                <div>
+
+                    <span class="modal-eyebrow">
+                        NUEVA SOLICITUD
+                    </span>
+
+                    <h2>
+                        Solicitar un servicio
+                    </h2>
+
+                    <p>
+                        Cuéntanos qué necesitas y podremos
+                        ayudarte a encontrar el servicio adecuado.
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="modal-close"
+                    id="closeRequestModal"
+                    aria-label="Cerrar">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+
+            </div>
+
+
+            <!-- FORM -->
+
+            <form
+                id="requestForm"
+                class="request-form">
+
+
+                <!-- SERVICE -->
+
+                <div class="form-group">
+
+                    <label for="requestService">
+                        Servicio
+                    </label>
+
+                    <div class="select-wrapper">
+
+                        <select
+                            id="requestService"
+                            name="service"
+                            required>
+
+                            <option value="">
+                                Selecciona un servicio
+                            </option>
+
+                            <option value="Desarrollo web">
+                                Desarrollo web
+                            </option>
+
+                            <option value="Diseño">
+                                Diseño e identidad visual
+                            </option>
+
+                            <option value="Software">
+                                Desarrollo de software
+                            </option>
+
+                            <option value="Automatización">
+                                Automatización empresarial
+                            </option>
+
+                            <option value="Consultoría">
+                                Consultoría tecnológica
+                            </option>
+
+                            <option value="Otro">
+                                Otro servicio
+                            </option>
+
+                        </select>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TITLE -->
+
+                <div class="form-group">
+
+                    <label for="requestTitle">
+                        Título de la solicitud
+                    </label>
+
+                    <input
+                        type="text"
+                        id="requestTitle"
+                        name="title"
+                        placeholder="Ej. Desarrollo de tienda virtual"
+                        maxlength="100"
+                        required>
+
+                </div>
+
+
+                <!-- DESCRIPTION -->
+
+                <div class="form-group">
+
+                    <label for="requestDescription">
+                        Descripción
+                    </label>
+
+                    <textarea
+                        id="requestDescription"
+                        name="description"
+                        rows="4"
+                        placeholder="Describe brevemente lo que necesitas..."
+                        maxlength="500"
+                        required></textarea>
+
+                    <span
+                        class="character-count"
+                        id="characterCount">
+
+                        0 / 500
+
+                    </span>
+
+                </div>
+
+
+                <!-- FORM ROW -->
+
+                <div class="form-row">
+
+
+                    <!-- PRIORITY -->
+
+                    <div class="form-group">
+
+                        <label for="requestPriority">
+                            Prioridad
+                        </label>
+
+                        <div class="select-wrapper">
+
+                            <select
+                                id="requestPriority"
+                                name="priority"
+                                required>
+
+                                <option value="">
+                                    Seleccionar
+                                </option>
+
+                                <option value="low">
+                                    Baja
+                                </option>
+
+                                <option value="medium">
+                                    Media
+                                </option>
+
+                                <option value="high">
+                                    Alta
+                                </option>
+
+                            </select>
+
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DATE -->
+
+                    <div class="form-group">
+
+                        <label for="requestDate">
+                            Fecha deseada
+                        </label>
+
+                        <input
+                            type="date"
+                            id="requestDate"
+                            name="date">
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- BUDGET -->
+
+                <div class="form-group">
+
+                    <label for="requestBudget">
+                        Presupuesto estimado
+                    </label>
+
+                    <div class="input-prefix">
+
+                        <span>
+                            $
+                        </span>
+
+                        <input
+                            type="number"
+                            id="requestBudget"
+                            name="budget"
+                            placeholder="0.00"
+                            min="0"
+                            step="0.01">
+
+                    </div>
+
+                </div>
+
+
+                <!-- ATTACHMENT -->
+
+                <div class="form-group">
+
+                    <label>
+
+                        Archivo adjunto
+
+                        <span>
+                            (opcional)
+                        </span>
+
+                    </label>
+
+
+                    <label
+                        class="file-upload"
+                        for="requestFile">
+
+
+                        <div class="file-upload-icon">
+
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                Adjunta un archivo
+                            </strong>
+
+                            <span>
+                                PDF, PNG, JPG o DOCX · Máx. 5 MB
+                            </span>
+
+                        </div>
+
+
+                    </label>
+
+
+                    <input
+                        type="file"
+                        id="requestFile"
+                        name="file"
+                        accept=".pdf,.png,.jpg,.jpeg,.doc,.docx">
+
+
+                    <div
+                        class="selected-file"
+                        id="selectedFile"
+                        hidden>
+
+                        <i class="fa-solid fa-paperclip"></i>
+
+                        <span id="selectedFileName">
+                            archivo.pdf
+                        </span>
+
+                        <button
+                            type="button"
+                            id="removeFile"
+                            aria-label="Eliminar archivo">
+
+                            <i class="fa-solid fa-xmark"></i>
+
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- ACTIONS -->
+
+                <div class="form-actions">
+
+                    <button
+                        type="button"
+                        class="btn-secondary"
+                        id="cancelRequest">
+
+                        Cancelar
+
+                    </button>
+
+
+                    <button
+                        type="submit"
+                        class="btn-primary">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                        Enviar solicitud
+
+                    </button>
+
+                </div>
+
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         MODAL DETALLE DE SOLICITUD
+    ========================================================== -->
+
+    <div
+        class="modal-overlay"
+        id="detailModal">
+
+
+        <div class="modal detail-modal">
+
+
+            <div class="modal-header">
+
+
+                <div>
+
+                    <span class="modal-eyebrow">
+                        DETALLE DE SOLICITUD
+                    </span>
+
+                    <h2 id="detailTitle">
+                        Desarrollo de sitio web
+                    </h2>
+
+                    <p id="detailCode">
+                        Solicitud #ZX-00125
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="modal-close"
+                    id="closeDetailModal"
+                    aria-label="Cerrar">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+
+            </div>
+
+
+            <!-- DETAIL STATUS -->
+
+            <div class="detail-status-wrapper">
+
+                <span class="detail-label">
+                    Estado actual
+                </span>
+
+                <span
+                    class="status status-processing"
+                    id="detailStatus">
+
+                    En proceso
+
+                </span>
+
+            </div>
+
+
+            <!-- TIMELINE -->
+
+            <div class="request-timeline">
+
+
+                <div class="timeline-item completed">
+
+                    <div class="timeline-dot">
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <strong>
+                            Solicitud enviada
+                        </strong>
+
+                        <span>
+                            Tu solicitud fue recibida.
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item completed">
+
+                    <div class="timeline-dot">
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <strong>
+                            Solicitud revisada
+                        </strong>
+
+                        <span>
+                            El equipo revisó los requerimientos.
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item active">
+
+                    <div class="timeline-dot">
+
+                        <i class="fa-solid fa-spinner"></i>
+
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <strong>
+                            En proceso
+                        </strong>
+
+                        <span>
+                            El equipo está trabajando en tu solicitud.
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot">
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <strong>
+                            Completada
+                        </strong>
+
+                        <span>
+                            Solicitud finalizada.
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- DETAIL INFORMATION -->
+
+            <div class="detail-information">
+
+
+                <div class="detail-item">
+
+                    <span>
+                        Servicio
+                    </span>
+
+                    <strong id="detailService">
+                        Desarrollo web
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <span>
+                        Fecha de solicitud
+                    </span>
+
+                    <strong id="detailDate">
+                        12 Ago 2026
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <span>
+                        Prioridad
+                    </span>
+
+                    <strong id="detailPriority">
+                        Alta
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="detail-description">
+
+                <span>
+                    Descripción
+                </span>
+
+                <p id="detailDescription">
+                    Desarrollo de plataforma web empresarial
+                    para ZentryX.
+                </p>
+
+            </div>
+
+
+            <div class="detail-footer">
+
+                <button
+                    type="button"
+                    class="btn-secondary"
+                    id="closeDetailButton">
+
+                    Cerrar
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         NOTIFICATION PANEL
+    ========================================================== -->
+
+    <div
+        class="notification-panel"
+        id="notificationPanel">
+
+
+        <div class="notification-header">
+
+
+            <div>
+
+                <span>
+                    NOTIFICACIONES
+                </span>
+
+                <h3>
+                    Actualizaciones
+                </h3>
+
+            </div>
+
+
+            <button
+                type="button"
+                id="closeNotifications"
+                aria-label="Cerrar notificaciones">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+        </div>
+
+
+        <div
+            class="notification-list"
+            id="notificationList">
+
+
+            <div class="notification-item">
+
+
+                <div class="notification-item-icon">
+
+                    <i class="fa-solid fa-file-circle-check"></i>
+
+                </div>
+
+
+                <div class="notification-item-content">
+
+                    <strong>
+                        Solicitud actualizada
+                    </strong>
+
+                    <p>
+                        Tu solicitud ZX-00125 está
+                        ahora en proceso.
+                    </p>
+
+                    <span class="notification-item-time">
+                        Hace 2 horas
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="notification-item">
+
+
+                <div class="notification-item-icon">
+
+                    <i class="fa-solid fa-bell"></i>
+
+                </div>
+
+
+                <div class="notification-item-content">
+
+                    <strong>
+                        Nueva actualización
+                    </strong>
+
+                    <p>
+                        El equipo revisó tu solicitud.
+                    </p>
+
+                    <span class="notification-item-time">
+                        Ayer
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =========================================================
+         LOGOUT MODAL
+    ========================================================== -->
+
+    <div
+        class="modal"
+        id="logoutModal">
+
+
+        <div
+            class="modal-overlay"
+            id="logoutModalOverlay">
+        </div>
+
+
+        <div class="modal-content">
+
+
+            <div class="modal-icon">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+            </div>
+
+
+            <h2>
+                ¿Cerrar sesión?
+            </h2>
+
+
+            <p>
+                Tu sesión actual se cerrará y tendrás
+                que iniciar sesión nuevamente para
+                acceder a tu cuenta.
+            </p>
+
+
+            <div class="modal-actions">
+
+
+                <button
+                    type="button"
+                    class="modal-cancel"
+                    id="cancelLogout">
+
+                    Cancelar
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="modal-confirm"
+                    id="confirmLogout">
+
+                    Cerrar sesión
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =========================================================
+         TOAST
+    ========================================================== -->
+
+    <div
+        class="toast"
+        id="toast">
+
+
+        <div
+            class="toast-icon"
+            id="toastIcon">
+
+            ✓
+
+        </div>
+
+
+        <div>
+
+            <strong id="toastTitle">
+                Solicitud enviada
+            </strong>
+
+            <p id="toastMessage">
+                Tu solicitud fue registrada correctamente.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
+    <script src="../js/solicitudes.js"></script>
+
+
+</body>
+
+</html>

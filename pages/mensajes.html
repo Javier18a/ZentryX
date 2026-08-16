@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Mensajes y notificaciones de ZentryX">
+
+    <title>ZentryX | Mensajes</title>
+
+    <!-- CSS PRINCIPAL -->
+    <link
+        rel="stylesheet"
+        href="../css/mensajes.css">
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         CONTENEDOR PRINCIPAL
+    ====================================================== -->
+
+    <div class="app-container">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside
+            class="sidebar"
+            id="sidebar">
+
+
+            <!-- HEADER -->
+
+            <div class="sidebar-header">
+
+                <a
+                    href="dashboard.html"
+                    class="logo">
+
+                    Zentry<span>X</span>
+
+                </a>
+
+
+                <button
+                    class="sidebar-close"
+                    id="sidebarClose"
+                    type="button"
+                    aria-label="Cerrar menú">
+
+                    ×
+
+                </button>
+
+            </div>
+
+
+            <!-- PERFIL -->
+
+            <div class="sidebar-profile">
+
+                <div
+                    class="profile-avatar"
+                    id="profileAvatar">
+
+                    U
+
+                </div>
+
+
+                <div class="profile-info">
+
+                    <strong id="sidebarUserName">
+                        Usuario
+                    </strong>
+
+                    <span id="sidebarUserRole">
+                        Usuario
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- NAVEGACIÓN -->
+
+            <nav class="sidebar-nav">
+
+
+                <!-- PRINCIPAL -->
+
+                <div class="nav-title">
+                    PRINCIPAL
+                </div>
+
+
+                <a
+                    href="dashboard.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-house"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Inicio
+                    </span>
+
+                </a>
+
+
+                <!-- EXPLORAR -->
+
+                <div class="nav-title">
+                    EXPLORAR
+                </div>
+
+
+                <a
+                    href="servicios.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Explorar servicios
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="categorias.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-grip"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Categorías
+                    </span>
+
+                </a>
+
+
+                <!-- SERVICIOS -->
+
+                <div class="nav-title">
+                    SERVICIOS
+                </div>
+
+
+                <a
+                    href="publicar-servicio.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Publicar servicio
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="mis-servicios.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-list"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mis servicios
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="mis-solicitudes.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mis solicitudes
+                    </span>
+
+                </a>
+
+
+                <!-- COMUNIDAD -->
+
+                <div class="nav-title">
+                    COMUNIDAD
+                </div>
+
+
+                <a
+                    href="favoritos.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Favoritos
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="mensajes.html"
+                    class="nav-item active">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-message"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mensajes
+                    </span>
+
+                    <span
+                        class="nav-count"
+                        id="navMessageCount">
+                        3
+                    </span>
+
+                </a>
+
+
+                <!-- CUENTA -->
+
+                <div class="nav-title">
+                    CUENTA
+                </div>
+
+
+                <a
+                    href="perfil.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mi perfil
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="configuracion.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-gear"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Configuración
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="perfil.html#seguridad"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Seguridad
+                    </span>
+
+                </a>
+
+
+                <!-- CERRAR SESIÓN -->
+
+                <button
+                    class="nav-item logout-button"
+                    id="logoutButton"
+                    type="button">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Cerrar sesión
+                    </span>
+
+                </button>
+
+
+            </nav>
+
+
+            <!-- FOOTER -->
+
+            <div class="sidebar-footer">
+
+                <small>
+                    ZentryX
+                </small>
+
+                <span>
+                    Sistema de gestión
+                </span>
+
+            </div>
+
+
+        </aside>
+
+
+        <!-- =================================================
+             OVERLAY
+        ================================================== -->
+
+        <div
+            class="sidebar-overlay"
+            id="sidebarOverlay">
+        </div>
+
+
+        <!-- =================================================
+             CONTENIDO PRINCIPAL
+        ================================================== -->
+
+        <main class="main-content">
+
+
+            <!-- =================================================
+                 TOPBAR
+            ================================================== -->
+
+            <header class="topbar">
+
+
+                <div class="topbar-left">
+
+
+                    <button
+                        class="menu-button"
+                        id="menuButton"
+                        type="button"
+                        aria-label="Abrir menú">
+
+                        ☰
+
+                    </button>
+
+
+                    <div>
+
+                        <span class="page-label">
+                            ZENTRYX
+                        </span>
+
+                        <h1>
+                            Mensajes
+                        </h1>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- TOPBAR RIGHT -->
+
+                <div class="topbar-right">
+
+
+                    <!-- NOTIFICACIONES -->
+
+                    <button
+                        class="notification-button"
+                        id="notificationButton"
+                        type="button"
+                        aria-label="Notificaciones">
+
+                        ♢
+
+                        <span
+                            class="notification-dot"
+                            id="notificationDot">
+                        </span>
+
+                    </button>
+
+
+                    <!-- USUARIO -->
+
+                    <a
+                        href="perfil.html"
+                        class="topbar-user">
+
+
+                        <div
+                            class="topbar-avatar"
+                            id="topbarAvatar">
+
+                            U
+
+                        </div>
+
+
+                        <div class="topbar-user-info">
+
+                            <strong id="topbarUserName">
+                                Usuario
+                            </strong>
+
+                            <span id="topbarUserEmail">
+                                usuario@email.com
+                            </span>
+
+                        </div>
+
+
+                    </a>
+
+
+                </div>
+
+
+            </header>
+
+
+            <!-- =================================================
+                 CONTENIDO DE MENSAJES
+            ================================================== -->
+
+            <section class="messages-content">
+
+
+                <!-- ENCABEZADO -->
+
+                <section class="messages-header">
+
+
+                    <div>
+
+                        <span class="section-label">
+                            CENTRO DE ACTIVIDAD
+                        </span>
+
+                        <h2>
+                            Mensajes
+                        </h2>
+
+                        <p>
+                            Revisa las novedades y actualizaciones
+                            de tu cuenta en ZentryX.
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        class="mark-all-button"
+                        id="markAllRead"
+                        type="button">
+
+                        <i class="fa-solid fa-check-double"></i>
+
+                        Marcar todo como leído
+
+                    </button>
+
+
+                </section>
+
+
+                <!-- =================================================
+                     RESUMEN
+                ================================================== -->
+
+                <section class="message-summary">
+
+
+                    <div class="summary-card">
+
+                        <div class="summary-icon blue">
+
+                            <i class="fa-solid fa-bell"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                TOTAL
+                            </span>
+
+                            <strong id="totalMessages">
+                                6
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="summary-card">
+
+                        <div class="summary-icon orange">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                NO LEÍDOS
+                            </span>
+
+                            <strong id="unreadMessages">
+                                3
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="summary-card">
+
+                        <div class="summary-icon green">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                ACTUALIZACIONES
+                            </span>
+
+                            <strong>
+                                4
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                </section>
+
+
+                <!-- =================================================
+                     FILTROS
+                ================================================== -->
+
+                <section class="messages-toolbar">
+
+
+                    <div class="message-filters">
+
+
+                        <button
+                            class="filter-button active"
+                            data-filter="all"
+                            type="button">
+
+                            Todas
+
+                        </button>
+
+
+                        <button
+                            class="filter-button"
+                            data-filter="unread"
+                            type="button">
+
+                            No leídas
+
+                            <span id="unreadFilterCount">
+                                3
+                            </span>
+
+                        </button>
+
+
+                        <button
+                            class="filter-button"
+                            data-filter="requests"
+                            type="button">
+
+                            Solicitudes
+
+                        </button>
+
+
+                        <button
+                            class="filter-button"
+                            data-filter="system"
+                            type="button">
+
+                            Sistema
+
+                        </button>
+
+
+                    </div>
+
+
+                    <div class="messages-actions">
+
+
+                        <button
+                            class="refresh-button"
+                            id="refreshMessages"
+                            type="button"
+                            title="Actualizar">
+
+                            <i class="fa-solid fa-rotate"></i>
+
+                        </button>
+
+
+                        <button
+                            class="filter-menu-button"
+                            id="filterMenuButton"
+                            type="button"
+                            title="Más filtros">
+
+                            <i class="fa-solid fa-sliders"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                </section>
+
+
+                <!-- =================================================
+                     LISTA DE MENSAJES
+                ================================================== -->
+
+                <section
+                    class="messages-list"
+                    id="messagesList">
+
+
+                    <!-- =================================================
+                         MENSAJE 1
+                    ================================================== -->
+
+                    <article
+                        class="message-card unread"
+                        data-category="requests"
+                        data-id="1">
+
+
+                        <div class="message-icon request">
+
+                            <i class="fa-solid fa-file-circle-check"></i>
+
+                        </div>
+
+
+                        <div class="message-content">
+
+
+                            <div class="message-top">
+
+                                <div>
+
+                                    <span class="message-category">
+                                        SOLICITUD
+                                    </span>
+
+                                    <h3>
+                                        Solicitud actualizada
+                                    </h3>
+
+                                </div>
+
+
+                                <span class="message-time">
+                                    Hace 10 min
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                Tu solicitud de servicio
+                                <strong>#ZX-00125</strong>
+                                ha cambiado de estado.
+                                Revisa los detalles para conocer
+                                la nueva actualización.
+                            </p>
+
+
+                            <div class="message-footer">
+
+                                <span class="message-status">
+                                    <i class="fa-solid fa-circle"></i>
+                                    No leído
+                                </span>
+
+
+                                <button
+                                    class="message-action"
+                                    data-action="read"
+                                    type="button">
+
+                                    Marcar como leído
+
+                                </button>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="message-indicator"></div>
+
+
+                    </article>
+
+
+                    <!-- =================================================
+                         MENSAJE 2
+                    ================================================== -->
+
+                    <article
+                        class="message-card unread"
+                        data-category="system"
+                        data-id="2">
+
+
+                        <div class="message-icon info">
+
+                            <i class="fa-solid fa-circle-info"></i>
+
+                        </div>
+
+
+                        <div class="message-content">
+
+
+                            <div class="message-top">
+
+                                <div>
+
+                                    <span class="message-category">
+                                        SISTEMA
+                                    </span>
+
+                                    <h3>
+                                        Bienvenido a ZentryX
+                                    </h3>
+
+                                </div>
+
+
+                                <span class="message-time">
+                                    Hace 1 hora
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                Tu cuenta está lista. Explora los servicios,
+                                administra tus solicitudes y encuentra
+                                nuevas oportunidades dentro de ZentryX.
+                            </p>
+
+
+                            <div class="message-footer">
+
+                                <span class="message-status">
+                                    <i class="fa-solid fa-circle"></i>
+                                    No leído
+                                </span>
+
+
+                                <button
+                                    class="message-action"
+                                    data-action="read"
+                                    type="button">
+
+                                    Marcar como leído
+
+                                </button>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="message-indicator"></div>
+
+
+                    </article>
+
+
+                    <!-- =================================================
+                         MENSAJE 3
+                    ================================================== -->
+
+                    <article
+                        class="message-card unread"
+                        data-category="requests"
+                        data-id="3">
+
+
+                        <div class="message-icon success">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+
+
+                        <div class="message-content">
+
+
+                            <div class="message-top">
+
+                                <div>
+
+                                    <span class="message-category">
+                                        SOLICITUD
+                                    </span>
+
+                                    <h3>
+                                        Solicitud recibida
+                                    </h3>
+
+                                </div>
+
+
+                                <span class="message-time">
+                                    Hoy, 08:30 AM
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                Hemos recibido correctamente tu solicitud
+                                de servicio. Puedes consultar su progreso
+                                desde el apartado de Mis solicitudes.
+                            </p>
+
+
+                            <div class="message-footer">
+
+                                <span class="message-status">
+                                    <i class="fa-solid fa-circle"></i>
+                                    No leído
+                                </span>
+
+
+                                <a
+                                    href="mis-solicitudes.html"
+                                    class="message-action">
+
+                                    Ver solicitud
+
+                                </a>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="message-indicator"></div>
+
+
+                    </article>
+
+
+                    <!-- =================================================
+                         MENSAJE 4
+                    ================================================== -->
+
+                    <article
+                        class="message-card"
+                        data-category="system"
+                        data-id="4">
+
+
+                        <div class="message-icon security">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                        </div>
+
+
+                        <div class="message-content">
+
+
+                            <div class="message-top">
+
+                                <div>
+
+                                    <span class="message-category">
+                                        SEGURIDAD
+                                    </span>
+
+                                    <h3>
+                                        Cuenta protegida
+                                    </h3>
+
+                                </div>
+
+
+                                <span class="message-time">
+                                    Ayer
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                La seguridad de tu cuenta se encuentra
+                                activa y funcionando correctamente.
+                            </p>
+
+
+                            <div class="message-footer">
+
+                                <span class="message-status read">
+                                    <i class="fa-solid fa-check"></i>
+                                    Leído
+                                </span>
+
+
+                                <a
+                                    href="perfil.html#seguridad"
+                                    class="message-action">
+
+                                    Revisar seguridad
+
+                                </a>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </article>
+
+
+                    <!-- =================================================
+                         MENSAJE 5
+                    ================================================== -->
+
+                    <article
+                        class="message-card"
+                        data-category="requests"
+                        data-id="5">
+
+
+                        <div class="message-icon purple">
+
+                            <i class="fa-solid fa-rotate"></i>
+
+                        </div>
+
+
+                        <div class="message-content">
+
+
+                            <div class="message-top">
+
+                                <div>
+
+                                    <span class="message-category">
+                                        SOLICITUD
+                                    </span>
+
+                                    <h3>
+                                        Estado en proceso
+                                    </h3>
+
+                                </div>
+
+
+                                <span class="message-time">
+                                    10 Ago
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                La solicitud
+                                <strong>#ZX-00118</strong>
+                                continúa en proceso de revisión.
+                            </p>
+
+
+                            <div class="message-footer">
+
+                                <span class="message-status read">
+                                    <i class="fa-solid fa-check"></i>
+                                    Leído
+                                </span>
+
+
+                                <a
+                                    href="mis-solicitudes.html"
+                                    class="message-action">
+
+                                    Ver solicitud
+
+                                </a>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </article>
+
+
+                    <!-- =================================================
+                         MENSAJE 6
+                    ================================================== -->
+
+                    <article
+                        class="message-card"
+                        data-category="system"
+                        data-id="6">
+
+
+                        <div class="message-icon warning">
+
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+
+                        </div>
+
+
+                        <div class="message-content">
+
+
+                            <div class="message-top">
+
+                                <div>
+
+                                    <span class="message-category">
+                                        SISTEMA
+                                    </span>
+
+                                    <h3>
+                                        Revisa tu información
+                                    </h3>
+
+                                </div>
+
+
+                                <span class="message-time">
+                                    08 Ago
+                                </span>
+
+                            </div>
+
+
+                            <p>
+                                Mantén actualizada la información de tu
+                                perfil para disfrutar correctamente
+                                de las funciones de ZentryX.
+                            </p>
+
+
+                            <div class="message-footer">
+
+                                <span class="message-status read">
+                                    <i class="fa-solid fa-check"></i>
+                                    Leído
+                                </span>
+
+
+                                <a
+                                    href="perfil.html"
+                                    class="message-action">
+
+                                    Ver perfil
+
+                                </a>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </article>
+
+
+                </section>
+
+
+                <!-- =================================================
+                     ESTADO VACÍO
+                ================================================== -->
+
+                <section
+                    class="messages-empty"
+                    id="messagesEmpty"
+                    hidden>
+
+
+                    <div class="empty-icon">
+
+                        <i class="fa-regular fa-bell-slash"></i>
+
+                    </div>
+
+
+                    <h3>
+                        No hay mensajes
+                    </h3>
+
+
+                    <p>
+                        No encontramos notificaciones
+                        que coincidan con el filtro seleccionado.
+                    </p>
+
+
+                </section>
+
+
+            </section>
+
+
+        </main>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         PANEL DE NOTIFICACIONES RÁPIDAS
+    ====================================================== -->
+
+    <div
+        class="notification-panel"
+        id="notificationPanel">
+
+
+        <div class="notification-panel-header">
+
+            <div>
+
+                <span>
+                    NOTIFICACIONES
+                </span>
+
+                <strong>
+                    Actividad reciente
+                </strong>
+
+            </div>
+
+
+            <button
+                id="closeNotificationPanel"
+                type="button"
+                aria-label="Cerrar">
+
+                ×
+
+            </button>
+
+        </div>
+
+
+        <div
+            class="notification-panel-list"
+            id="notificationPanelList">
+
+
+            <div class="quick-notification unread">
+
+                <div class="quick-notification-icon blue">
+
+                    <i class="fa-solid fa-file-circle-check"></i>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Solicitud actualizada
+                    </strong>
+
+                    <span>
+                        Hace 10 minutos
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="quick-notification unread">
+
+                <div class="quick-notification-icon green">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Solicitud recibida
+                    </strong>
+
+                    <span>
+                        Hoy, 08:30 AM
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="quick-notification">
+
+                <div class="quick-notification-icon purple">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Cuenta protegida
+                    </strong>
+
+                    <span>
+                        Ayer
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <a
+            href="mensajes.html"
+            class="view-all-notifications">
+
+            Ver todos los mensajes
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         TOAST
+    ====================================================== -->
+
+    <div
+        class="zentryx-toast"
+        id="zentryxToast"
+        hidden>
+
+
+        <div class="toast-icon">
+
+            <i class="fa-solid fa-check"></i>
+
+        </div>
+
+
+        <div>
+
+            <strong id="toastTitle">
+                Mensaje actualizado
+            </strong>
+
+            <span id="toastMessage">
+                La notificación fue marcada como leída.
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="../js/mensajes.js"></script>
+
+
+</body>
+
+</html>

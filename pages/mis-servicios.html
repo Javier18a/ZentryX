@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>ZentryX | Mis servicios</title>
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="../css/mis-servicios.css">
+
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         CONTENEDOR PRINCIPAL
+    ====================================================== -->
+
+    <div class="app-container">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside
+            class="sidebar"
+            id="sidebar">
+
+
+            <!-- HEADER -->
+
+            <div class="sidebar-header">
+
+                <a
+                    href="dashboard.html"
+                    class="logo">
+
+                    Zentry<span>X</span>
+
+                </a>
+
+
+                <button
+                    class="sidebar-close"
+                    id="sidebarClose"
+                    type="button"
+                    aria-label="Cerrar menú">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- PERFIL -->
+
+            <div class="sidebar-profile">
+
+                <div
+                    class="profile-avatar"
+                    id="profileAvatar">
+
+                    U
+
+                </div>
+
+
+                <div class="profile-info">
+
+                    <strong id="sidebarUserName">
+                        Usuario
+                    </strong>
+
+                    <span id="sidebarUserRole">
+                        Usuario
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 NAVEGACIÓN
+            ================================================== -->
+
+            <nav class="sidebar-nav">
+
+
+                <!-- PRINCIPAL -->
+
+                <div class="nav-title">
+                    PRINCIPAL
+                </div>
+
+
+                <a
+                    href="dashboard.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-house"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Inicio
+                    </span>
+
+                </a>
+
+
+                <!-- EXPLORAR -->
+
+                <div class="nav-title">
+                    EXPLORAR
+                </div>
+
+
+                <a
+                    href="servicios.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Explorar servicios
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="categorias.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-grip"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Categorías
+                    </span>
+
+                </a>
+
+
+                <!-- SERVICIOS -->
+
+                <div class="nav-title">
+                    SERVICIOS
+                </div>
+
+
+                <a
+                    href="publicar.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Publicar servicio
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="mis-servicios.html"
+                    class="nav-item active">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-list"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mis servicios
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="mis-solicitudes.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mis solicitudes
+                    </span>
+
+                </a>
+
+
+                <!-- COMUNIDAD -->
+
+                <div class="nav-title">
+                    COMUNIDAD
+                </div>
+
+
+                <a
+                    href="favoritos.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Favoritos
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="mensajes.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-message"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mensajes
+                    </span>
+
+                </a>
+
+
+                <!-- CUENTA -->
+
+                <div class="nav-title">
+                    CUENTA
+                </div>
+
+
+                <a
+                    href="perfil.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mi perfil
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="configuracion.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-gear"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Configuración
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="perfil.html#seguridad"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Seguridad
+                    </span>
+
+                </a>
+
+
+                <!-- CERRAR SESIÓN -->
+
+                <button
+                    class="nav-item logout-button"
+                    id="logoutButton"
+                    type="button">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Cerrar sesión
+                    </span>
+
+                </button>
+
+            </nav>
+
+
+            <!-- FOOTER -->
+
+            <div class="sidebar-footer">
+
+                <small>
+                    ZentryX
+                </small>
+
+                <span>
+                    Sistema de gestión
+                </span>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =================================================
+             OVERLAY SIDEBAR
+        ================================================== -->
+
+        <div
+            class="sidebar-overlay"
+            id="sidebarOverlay">
+        </div>
+
+
+        <!-- =================================================
+             CONTENIDO PRINCIPAL
+        ================================================== -->
+
+        <main class="main-content">
+
+
+            <!-- =================================================
+                 TOPBAR
+            ================================================== -->
+
+            <header class="topbar">
+
+
+                <div class="topbar-left">
+
+
+                    <button
+                        class="menu-button"
+                        id="menuButton"
+                        type="button"
+                        aria-label="Abrir menú">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+
+                    <div>
+
+                        <span class="page-label">
+                            SERVICIOS
+                        </span>
+
+                        <h1>
+                            Mis servicios
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TOPBAR RIGHT -->
+
+                <div class="topbar-right">
+
+
+                    <!-- NOTIFICACIONES -->
+
+                    <button
+                        class="notification-button"
+                        id="notificationButton"
+                        type="button"
+                        aria-label="Notificaciones">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span
+                            class="notification-dot"
+                            id="notificationDot">
+                        </span>
+
+                    </button>
+
+
+                    <!-- USUARIO -->
+
+                    <div class="topbar-user">
+
+
+                        <div
+                            class="topbar-avatar"
+                            id="topbarAvatar">
+
+                            U
+
+                        </div>
+
+
+                        <div class="topbar-user-info">
+
+                            <strong id="topbarUserName">
+                                Usuario
+                            </strong>
+
+                            <span id="topbarUserEmail">
+                                usuario@zentryx.com
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================================
+                 CONTENIDO
+            ================================================== -->
+
+            <section class="my-services-content">
+
+
+                <!-- =================================================
+                     ENCABEZADO
+                ================================================== -->
+
+                <section class="services-header">
+
+
+                    <div class="services-heading">
+
+                        <span>
+                            MI ACTIVIDAD
+                        </span>
+
+                        <h2>
+                            Administra tus servicios
+                        </h2>
+
+                        <p>
+                            Consulta, administra y controla los
+                            servicios que has publicado en ZentryX.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="publicar.html"
+                        class="publish-button">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Publicar servicio
+
+                    </a>
+
+                </section>
+
+
+                <!-- =================================================
+                     ESTADÍSTICAS
+                ================================================== -->
+
+                <section class="services-stats">
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-icon">
+
+                            <i class="fa-solid fa-layer-group"></i>
+
+                        </div>
+
+                        <div class="stat-info">
+
+                            <span>
+                                TOTAL
+                            </span>
+
+                            <strong id="totalServices">
+                                0
+                            </strong>
+
+                            <small>
+                                Servicios publicados
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-icon active">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+
+                        <div class="stat-info">
+
+                            <span>
+                                ACTIVOS
+                            </span>
+
+                            <strong id="activeServices">
+                                0
+                            </strong>
+
+                            <small>
+                                Servicios disponibles
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-icon pending">
+
+                            <i class="fa-solid fa-clock"></i>
+
+                        </div>
+
+                        <div class="stat-info">
+
+                            <span>
+                                SOLICITUDES
+                            </span>
+
+                            <strong id="serviceRequests">
+                                0
+                            </strong>
+
+                            <small>
+                                Solicitudes recibidas
+                            </small>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-icon rating">
+
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+
+                        <div class="stat-info">
+
+                            <span>
+                                VALORACIÓN
+                            </span>
+
+                            <strong id="averageRating">
+                                0.0
+                            </strong>
+
+                            <small>
+                                Promedio general
+                            </small>
+
+                        </div>
+
+                    </article>
+
+                </section>
+
+
+                <!-- =================================================
+                     TOOLBAR
+                ================================================== -->
+
+                <section class="services-toolbar">
+
+
+                    <div class="toolbar-left">
+
+                        <div class="section-label">
+
+                            <span>
+                                TUS SERVICIOS
+                            </span>
+
+                        </div>
+
+                        <strong id="servicesCount">
+                            0 servicios
+                        </strong>
+
+                    </div>
+
+
+                    <div class="toolbar-right">
+
+
+                        <div class="search-box">
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                            <input
+                                type="search"
+                                id="serviceSearch"
+                                placeholder="Buscar servicio..."
+                                autocomplete="off">
+
+                            <button
+                                type="button"
+                                id="clearSearch"
+                                aria-label="Limpiar búsqueda">
+
+                                <i class="fa-solid fa-xmark"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <select
+                            id="statusFilter"
+                            class="status-filter">
+
+                            <option value="all">
+                                Todos los estados
+                            </option>
+
+                            <option value="activo">
+                                Activos
+                            </option>
+
+                            <option value="pausado">
+                                Pausados
+                            </option>
+
+                        </select>
+
+
+                        <select
+                            id="sortServices"
+                            class="sort-services">
+
+                            <option value="recent">
+                                Más recientes
+                            </option>
+
+                            <option value="oldest">
+                                Más antiguos
+                            </option>
+
+                            <option value="price-high">
+                                Mayor precio
+                            </option>
+
+                            <option value="price-low">
+                                Menor precio
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     GRID
+                ================================================== -->
+
+                <section
+                    class="my-services-grid"
+                    id="myServicesGrid">
+
+                </section>
+
+
+                <!-- =================================================
+                     ESTADO VACÍO
+                ================================================== -->
+
+                <section
+                    class="services-empty"
+                    id="servicesEmpty"
+                    hidden>
+
+
+                    <div class="empty-icon">
+
+                        <i class="fa-solid fa-box-open"></i>
+
+                    </div>
+
+
+                    <h3 id="emptyTitle">
+                        Aún no tienes servicios
+                    </h3>
+
+
+                    <p id="emptyMessage">
+                        Publica tu primer servicio y comienza
+                        a ofrecer tus conocimientos dentro de
+                        la comunidad ZentryX.
+                    </p>
+
+
+                    <a
+                        href="publicar.html"
+                        class="empty-action">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Publicar mi primer servicio
+
+                    </a>
+
+                </section>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- =====================================================
+         PANEL DE NOTIFICACIONES
+    ====================================================== -->
+
+    <div
+        class="notification-panel"
+        id="notificationPanel">
+
+
+        <div class="notification-header">
+
+            <div>
+
+                <span>
+                    CENTRO
+                </span>
+
+                <h3>
+                    Notificaciones
+                </h3>
+
+            </div>
+
+
+            <button
+                id="closeNotifications"
+                type="button"
+                aria-label="Cerrar notificaciones">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <div
+            class="notification-list"
+            id="notificationList">
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MODAL CERRAR SESIÓN
+    ====================================================== -->
+
+    <div
+        class="modal"
+        id="logoutModal">
+
+
+        <div
+            class="modal-overlay"
+            id="logoutModalOverlay">
+        </div>
+
+
+        <div class="modal-content">
+
+
+            <div class="modal-icon">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+            </div>
+
+
+            <h2>
+                ¿Cerrar sesión?
+            </h2>
+
+
+            <p>
+                Tu sesión actual se cerrará y tendrás que
+                iniciar sesión nuevamente para acceder a ZentryX.
+            </p>
+
+
+            <div class="modal-actions">
+
+
+                <button
+                    class="modal-cancel"
+                    id="cancelLogout"
+                    type="button">
+
+                    Cancelar
+
+                </button>
+
+
+                <button
+                    class="modal-confirm"
+                    id="confirmLogout"
+                    type="button">
+
+                    Cerrar sesión
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MODAL ELIMINAR SERVICIO
+    ====================================================== -->
+
+    <div
+        class="modal"
+        id="deleteModal">
+
+
+        <div
+            class="modal-overlay"
+            id="deleteModalOverlay">
+        </div>
+
+
+        <div class="modal-content">
+
+
+            <div class="modal-icon delete-icon">
+
+                <i class="fa-solid fa-trash"></i>
+
+            </div>
+
+
+            <h2>
+                ¿Eliminar servicio?
+            </h2>
+
+
+            <p>
+                Esta acción eliminará el servicio de tu lista
+                y ya no estará disponible para otros usuarios.
+                Esta acción no se puede deshacer.
+            </p>
+
+
+            <div class="modal-actions">
+
+
+                <button
+                    class="modal-cancel"
+                    id="cancelDelete"
+                    type="button">
+
+                    Cancelar
+
+                </button>
+
+
+                <button
+                    class="modal-confirm"
+                    id="confirmDelete"
+                    type="button">
+
+                    Eliminar servicio
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MODAL CAMBIAR ESTADO
+    ====================================================== -->
+
+    <div
+        class="modal"
+        id="statusModal">
+
+
+        <div
+            class="modal-overlay"
+            id="statusModalOverlay">
+        </div>
+
+
+        <div class="modal-content">
+
+
+            <div class="modal-icon status-icon">
+
+                <i class="fa-solid fa-power-off"></i>
+
+            </div>
+
+
+            <h2 id="statusModalTitle">
+                Cambiar estado
+            </h2>
+
+
+            <p id="statusModalMessage">
+                ¿Deseas cambiar el estado de este servicio?
+            </p>
+
+
+            <div class="modal-actions">
+
+
+                <button
+                    class="modal-cancel"
+                    id="cancelStatus"
+                    type="button">
+
+                    Cancelar
+
+                </button>
+
+
+                <button
+                    class="modal-confirm status-confirm"
+                    id="confirmStatus"
+                    type="button">
+
+                    Confirmar
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         TOAST
+    ====================================================== -->
+
+    <div
+        class="toast"
+        id="toast">
+
+
+        <div
+            class="toast-icon"
+            id="toastIcon">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+        </div>
+
+
+        <div>
+
+            <strong id="toastTitle">
+                Correcto
+            </strong>
+
+            <p id="toastMessage">
+                Operación realizada correctamente.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="../js/mis-servicios.js"></script>
+
+</body>
+
+</html>

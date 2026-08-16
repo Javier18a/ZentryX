@@ -845,30 +845,28 @@ function mostrarActividad(actividades) {
 
 function obtenerIconoActividad(tipo) {
 
-    switch (
-        String(tipo || "").toLowerCase()
-    ) {
+    switch (String(tipo || "").toLowerCase()) {
 
         case "login":
-            return "↪";
+            return '<i class="fa-solid fa-right-to-bracket"></i>';
 
         case "logout":
-            return "↩";
+            return '<i class="fa-solid fa-right-from-bracket"></i>';
 
         case "profile":
-            return "◉";
+            return '<i class="fa-solid fa-user"></i>';
 
         case "security":
-            return "◈";
+            return '<i class="fa-solid fa-shield-halved"></i>';
 
         case "register":
-            return "+";
+            return '<i class="fa-solid fa-user-plus"></i>';
 
         case "account":
-            return "✓";
+            return '<i class="fa-solid fa-circle-check"></i>';
 
         default:
-            return "•";
+            return '<i class="fa-solid fa-circle"></i>';
     }
 }
 
@@ -1155,24 +1153,22 @@ function mostrarNotificaciones(
 
 function obtenerIconoNotificacion(tipo) {
 
-    switch (
-        String(tipo || "").toLowerCase()
-    ) {
+    switch (String(tipo || "").toLowerCase()) {
 
         case "security":
-            return "◈";
+            return '<i class="fa-solid fa-shield-halved"></i>';
 
         case "success":
-            return "✓";
+            return '<i class="fa-solid fa-circle-check"></i>';
 
         case "warning":
-            return "!";
+            return '<i class="fa-solid fa-triangle-exclamation"></i>';
 
         case "system":
-            return "⚙";
+            return '<i class="fa-solid fa-gear"></i>';
 
         default:
-            return "♢";
+            return '<i class="fa-solid fa-bell"></i>';
     }
 }
 

@@ -5,19 +5,14 @@
 
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="description"
-        content="Perfil de usuario - ZentryX">
+    <meta name="description" content="Perfil de usuario - ZentryX">
 
     <title>Mi Perfil | ZentryX</title>
 
-    <link
-        rel="stylesheet"
-        href="../css/perfil.css">
+    <link rel="stylesheet" href="../css/perfil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 
@@ -36,28 +31,21 @@
              SIDEBAR
         ================================================== -->
 
-        <aside
-            class="sidebar"
-            id="sidebar">
+        <aside class="sidebar" id="sidebar">
 
 
             <!-- HEADER -->
 
             <div class="sidebar-header">
 
-                <a
-                    href="dashboard.html"
-                    class="logo">
+                <a href="dashboard.html" class="logo">
 
                     <span>Z</span>entryX
 
                 </a>
 
 
-                <button
-                    type="button"
-                    class="sidebar-close"
-                    id="sidebarClose">
+                <button type="button" class="sidebar-close" id="sidebarClose">
 
                     &times;
 
@@ -70,9 +58,7 @@
 
             <div class="sidebar-profile">
 
-                <div
-                    class="profile-avatar"
-                    id="profileAvatar">
+                <div class="profile-avatar" id="profileAvatar">
 
                     U
 
@@ -98,92 +84,154 @@
 
             <nav class="sidebar-nav">
 
+                <!-- =================================================
+         PRINCIPAL
+    ================================================== -->
 
-                <p class="nav-title">
+                <!-- PRINCIPAL -->
+                <div class="nav-title">
                     PRINCIPAL
-                </p>
+                </div>
 
-
-                <a
-                    href="dashboard.html"
-                    class="nav-item">
-
+                <a href="dashboard.html" class="nav-item">
                     <span class="nav-icon">
-                        ▦
+                        <i class="fa-solid fa-house"></i>
                     </span>
 
-                    <span>
-                        Dashboard
+                    <span class="nav-text">
+                        Inicio
                     </span>
-
                 </a>
 
 
-                <a
-                    href="dashboard.html"
-                    class="nav-item">
+                <!-- EXPLORAR -->
+                <div class="nav-title">
+                    EXPLORAR
+                </div>
 
+                <a href="servicios.html" class="nav-item">
                     <span class="nav-icon">
-                        ◷
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
 
-                    <span>
-                        Actividad
+                    <span class="nav-text">
+                        Explorar servicios
                     </span>
-
                 </a>
 
 
-                <a
-                    href="dashboard.html"
-                    class="nav-item">
-
+                <a href="categorias.html" class="nav-item">
                     <span class="nav-icon">
-                        ♢
+                        <i class="fa-solid fa-grip"></i>
                     </span>
 
-                    <span>
-                        Notificaciones
+                    <span class="nav-text">
+                        Categorías
                     </span>
-
                 </a>
 
 
-                <p class="nav-title">
+                <!-- SERVICIOS -->
+                <div class="nav-title">
+                    SERVICIOS
+                </div>
+
+                <a href="publicar-servicio.html" class="nav-item">
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Publicar servicio
+                    </span>
+                </a>
+
+
+                <a href="mis-servicios.html" class="nav-item">
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-list"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mis servicios
+                    </span>
+                </a>
+
+
+                <a href="mis-solicitudes.html" class="nav-item">
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mis solicitudes
+                    </span>
+                </a>
+
+
+                <!-- COMUNIDAD -->
+                <div class="nav-title">
+                    COMUNIDAD
+                </div>
+
+                <a href="mensajes.html" class="nav-item">
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-message"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mensajes
+                    </span>
+                </a>
+
+
+                <!-- CUENTA -->
+                <div class="nav-title">
                     CUENTA
-                </p>
+                </div>
 
-
-                <a
-                    href="perfil.html"
-                    class="nav-item active">
-
+                <a href="perfil.html" class="nav-item active">
                     <span class="nav-icon">
-                        ◎
+                        <i class="fa-solid fa-user"></i>
                     </span>
 
-                    <span>
+                    <span class="nav-text">
                         Mi perfil
                     </span>
-
                 </a>
 
 
-                <a
-                    href="#"
-                    class="nav-item"
-                    id="configurationLink">
-
+                <a href="configuracion.html" class="nav-item">
                     <span class="nav-icon">
-                        ⚙
+                        <i class="fa-solid fa-gear"></i>
                     </span>
 
-                    <span>
+                    <span class="nav-text">
                         Configuración
                     </span>
-
                 </a>
 
+
+                <a href="perfil.html#seguridad" class="nav-item">
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Seguridad
+                    </span>
+                </a>
+
+
+                <!-- CERRAR SESIÓN -->
+                <button class="nav-item logout-button" id="logoutButton" type="button">
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </span>
+                    <span class="nav-text">
+                        Cerrar sesión
+                    </span>
+                </button>
 
             </nav>
 
@@ -192,10 +240,7 @@
 
             <div class="sidebar-footer">
 
-                <button
-                    type="button"
-                    class="logout-button"
-                    id="logoutButton">
+                <button type="button" class="logout-button" id="logoutButton">
 
                     <span class="nav-icon">
                         ↪
@@ -217,9 +262,7 @@
              OVERLAY
         ================================================== -->
 
-        <div
-            class="sidebar-overlay"
-            id="sidebarOverlay">
+        <div class="sidebar-overlay" id="sidebarOverlay">
         </div>
 
 
@@ -241,10 +284,7 @@
                 <div class="topbar-left">
 
 
-                    <button
-                        type="button"
-                        class="menu-button"
-                        id="menuButton">
+                    <button type="button" class="menu-button" id="menuButton">
 
                         ☰
 
@@ -273,16 +313,11 @@
 
                     <!-- NOTIFICACIONES -->
 
-                    <button
-                        type="button"
-                        class="notification-button"
-                        id="notificationButton">
+                    <button type="button" class="notification-button" id="notificationButton">
 
                         ♢
 
-                        <span
-                            class="notification-dot"
-                            id="notificationDot">
+                        <span class="notification-dot" id="notificationDot">
                         </span>
 
                     </button>
@@ -293,9 +328,7 @@
                     <div class="topbar-user">
 
 
-                        <div
-                            class="topbar-avatar"
-                            id="topbarAvatar">
+                        <div class="topbar-avatar" id="topbarAvatar">
 
                             U
 
@@ -357,9 +390,7 @@
                     </div>
 
 
-                    <a
-                        href="dashboard.html"
-                        class="back-button">
+                    <a href="dashboard.html" class="back-button">
 
                         ←
                         Volver al dashboard
@@ -388,9 +419,7 @@
                         <div class="profile-cover">
 
 
-                            <div
-                                class="profile-main-avatar"
-                                id="mainAvatar">
+                            <div class="profile-main-avatar" id="mainAvatar">
 
                                 U
 
@@ -408,9 +437,7 @@
                             </h3>
 
 
-                            <p
-                                class="profile-username"
-                                id="profileUsername">
+                            <p class="profile-username" id="profileUsername">
 
                                 @usuario
 
@@ -442,8 +469,7 @@
                                         Estado
                                     </span>
 
-                                    <strong
-                                        id="accountStatus">
+                                    <strong id="accountStatus">
 
                                         Activo
 
@@ -458,8 +484,7 @@
                                         Miembro desde
                                     </span>
 
-                                    <strong
-                                        id="memberSince">
+                                    <strong id="memberSince">
 
                                         --
 
@@ -501,10 +526,7 @@
                             </div>
 
 
-                            <button
-                                type="button"
-                                class="edit-button"
-                                id="editButton">
+                            <button type="button" class="edit-button" id="editButton">
 
                                 ✎
                                 Editar
@@ -518,9 +540,7 @@
 
                         <!-- FORMULARIO -->
 
-                        <form
-                            id="profileForm"
-                            autocomplete="off">
+                        <form id="profileForm" autocomplete="off">
 
 
                             <!-- NOMBRE -->
@@ -534,11 +554,7 @@
                                         Nombre
                                     </label>
 
-                                    <input
-                                        type="text"
-                                        id="nombre"
-                                        name="nombre"
-                                        disabled>
+                                    <input type="text" id="nombre" name="nombre" disabled>
 
                                 </div>
 
@@ -551,11 +567,7 @@
                                         Apellido
                                     </label>
 
-                                    <input
-                                        type="text"
-                                        id="apellido"
-                                        name="apellido"
-                                        disabled>
+                                    <input type="text" id="apellido" name="apellido" disabled>
 
                                 </div>
 
@@ -572,11 +584,7 @@
                                     Nombre de usuario
                                 </label>
 
-                                <input
-                                    type="text"
-                                    id="usuario"
-                                    name="usuario"
-                                    disabled>
+                                <input type="text" id="usuario" name="usuario" disabled>
 
                             </div>
 
@@ -590,11 +598,7 @@
                                     Correo electrónico
                                 </label>
 
-                                <input
-                                    type="email"
-                                    id="correo"
-                                    name="correo"
-                                    disabled>
+                                <input type="email" id="correo" name="correo" disabled>
 
                             </div>
 
@@ -608,11 +612,7 @@
                                     Identificador de usuario
                                 </label>
 
-                                <input
-                                    type="text"
-                                    id="identificador"
-                                    name="identificador"
-                                    disabled>
+                                <input type="text" id="identificador" name="identificador" disabled>
 
                             </div>
 
@@ -620,24 +620,17 @@
 
                             <!-- BOTONES -->
 
-                            <div
-                                class="form-actions"
-                                id="formActions">
+                            <div class="form-actions" id="formActions">
 
 
-                                <button
-                                    type="button"
-                                    class="cancel-button"
-                                    id="cancelButton">
+                                <button type="button" class="cancel-button" id="cancelButton">
 
                                     Cancelar
 
                                 </button>
 
 
-                                <button
-                                    type="submit"
-                                    class="save-button">
+                                <button type="submit" class="save-button">
 
                                     Guardar cambios
 
@@ -711,10 +704,7 @@
                             </div>
 
 
-                            <button
-                                type="button"
-                                class="security-button"
-                                id="passwordButton">
+                            <button type="button" class="security-button" id="passwordButton">
 
                                 Cambiar
 
@@ -749,8 +739,7 @@
                             </div>
 
 
-                            <span
-                                class="security-status">
+                            <span class="security-status">
 
                                 Activa
 
@@ -830,14 +819,10 @@
          MODAL CERRAR SESIÓN
     ====================================================== -->
 
-    <div
-        class="modal"
-        id="logoutModal">
+    <div class="modal" id="logoutModal">
 
 
-        <div
-            class="modal-overlay"
-            id="logoutModalOverlay">
+        <div class="modal-overlay" id="logoutModalOverlay">
         </div>
 
 
@@ -863,20 +848,14 @@
             <div class="modal-actions">
 
 
-                <button
-                    type="button"
-                    class="modal-cancel"
-                    id="cancelLogout">
+                <button type="button" class="modal-cancel" id="cancelLogout">
 
                     Cancelar
 
                 </button>
 
 
-                <button
-                    type="button"
-                    class="modal-confirm"
-                    id="confirmLogout">
+                <button type="button" class="modal-confirm" id="confirmLogout">
 
                     Cerrar sesión
 
@@ -897,14 +876,10 @@
          MODAL CAMBIAR CONTRASEÑA
     ====================================================== -->
 
-    <div
-        class="modal"
-        id="passwordModal">
+    <div class="modal" id="passwordModal">
 
 
-        <div
-            class="modal-overlay"
-            id="passwordModalOverlay">
+        <div class="modal-overlay" id="passwordModalOverlay">
         </div>
 
 
@@ -926,8 +901,7 @@
             </p>
 
 
-            <form
-                id="passwordForm">
+            <form id="passwordForm">
 
 
                 <div class="form-group">
@@ -936,10 +910,7 @@
                         Contraseña actual
                     </label>
 
-                    <input
-                        type="password"
-                        id="currentPassword"
-                        required>
+                    <input type="password" id="currentPassword" required>
 
                 </div>
 
@@ -950,10 +921,7 @@
                         Nueva contraseña
                     </label>
 
-                    <input
-                        type="password"
-                        id="newPassword"
-                        required>
+                    <input type="password" id="newPassword" required>
 
                 </div>
 
@@ -964,36 +932,26 @@
                         Confirmar contraseña
                     </label>
 
-                    <input
-                        type="password"
-                        id="confirmPassword"
-                        required>
+                    <input type="password" id="confirmPassword" required>
 
                 </div>
 
 
-                <div
-                    class="password-message"
-                    id="passwordMessage">
+                <div class="password-message" id="passwordMessage">
                 </div>
 
 
                 <div class="modal-actions">
 
 
-                    <button
-                        type="button"
-                        class="modal-cancel"
-                        id="cancelPassword">
+                    <button type="button" class="modal-cancel" id="cancelPassword">
 
                         Cancelar
 
                     </button>
 
 
-                    <button
-                        type="submit"
-                        class="modal-confirm password-confirm">
+                    <button type="submit" class="modal-confirm password-confirm">
 
                         Actualizar
 
@@ -1017,9 +975,7 @@
          NOTIFICACIONES
     ====================================================== -->
 
-    <div
-        class="notification-panel"
-        id="notificationPanel">
+    <div class="notification-panel" id="notificationPanel">
 
 
         <div class="notification-header">
@@ -1038,9 +994,7 @@
             </div>
 
 
-            <button
-                type="button"
-                id="closeNotifications">
+            <button type="button" id="closeNotifications">
 
                 &times;
 
@@ -1050,9 +1004,7 @@
         </div>
 
 
-        <div
-            class="notification-list"
-            id="notificationList">
+        <div class="notification-list" id="notificationList">
 
 
             <div class="notification-empty">
@@ -1079,14 +1031,10 @@
          TOAST
     ====================================================== -->
 
-    <div
-        class="toast"
-        id="toast">
+    <div class="toast" id="toast">
 
 
-        <div
-            class="toast-icon"
-            id="toastIcon">
+        <div class="toast-icon" id="toastIcon">
 
             ✓
 
@@ -1111,6 +1059,7 @@
 
 
     <script src="../js/perfil.js"></script>
+    <script src="../js/dashboard.js"></script>
 
 </body>
 

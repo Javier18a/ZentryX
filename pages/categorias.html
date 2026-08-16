@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>ZentryX | Categorías</title>
+
+    <!-- FONT AWESOME -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="../css/categorias.css">
+
+</head>
+
+
+<body>
+
+    <div class="app-container">
+
+
+        <!-- =====================================================
+             SIDEBAR
+        ====================================================== -->
+
+        <aside class="sidebar" id="sidebar">
+
+
+            <!-- HEADER -->
+
+            <div class="sidebar-header">
+
+                <div class="logo">
+                    Zentry<span>X</span>
+                </div>
+
+                <button
+                    class="sidebar-close"
+                    id="sidebarClose"
+                    type="button">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- PERFIL -->
+
+            <div class="sidebar-profile">
+
+                <div class="profile-avatar">
+
+                    <span id="sidebarUserInitial">
+                        U
+                    </span>
+
+                </div>
+
+
+                <div class="profile-info">
+
+                    <strong id="sidebarUserName">
+                        Usuario
+                    </strong>
+
+                    <span>
+                        Cuenta ZentryX
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 NAVEGACIÓN
+            ================================================== -->
+
+            <nav class="sidebar-nav">
+
+
+                <!-- PRINCIPAL -->
+
+                <div class="nav-title">
+                    PRINCIPAL
+                </div>
+
+
+                <a
+                    href="dashboard.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-house"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Inicio
+                    </span>
+
+                </a>
+
+
+                <!-- EXPLORAR -->
+
+                <div class="nav-title">
+                    EXPLORAR
+                </div>
+
+
+                <a
+                    href="servicios.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Explorar servicios
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="categorias.html"
+                    class="nav-item active">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-grip"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Categorías
+                    </span>
+
+                </a>
+
+
+                <!-- SERVICIOS -->
+
+                <div class="nav-title">
+                    SERVICIOS
+                </div>
+
+
+                <a
+                    href="publicar-servicio.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Publicar servicio
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="mis-servicios.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-list"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Mis servicios
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="mis-solicitudes.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Mis solicitudes
+                    </span>
+
+                </a>
+
+
+                <!-- COMUNIDAD -->
+
+                <div class="nav-title">
+                    COMUNIDAD
+                </div>
+
+
+                <a
+                    href="mensajes.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-message"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Mensajes
+                    </span>
+
+                </a>
+
+
+                <!-- CUENTA -->
+
+                <div class="nav-title">
+                    CUENTA
+                </div>
+
+
+                <a
+                    href="perfil.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Mi perfil
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="configuracion.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Configuración
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="perfil.html#seguridad"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Seguridad
+                    </span>
+
+                </a>
+
+
+                <!-- CERRAR SESIÓN -->
+
+                <button
+                    class="nav-item logout-button"
+                    id="logoutButton"
+                    type="button">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Cerrar sesión
+                    </span>
+
+                </button>
+
+
+            </nav>
+
+
+            <!-- FOOTER -->
+
+            <div class="sidebar-footer">
+
+                <small>
+                    ZentryX
+                </small>
+
+                <span>
+                    Plataforma de servicios
+                </span>
+
+            </div>
+
+
+        </aside>
+
+
+        <!-- =====================================================
+             OVERLAY MOBILE
+        ====================================================== -->
+
+        <div
+            class="sidebar-overlay"
+            id="sidebarOverlay">
+        </div>
+
+
+        <!-- =====================================================
+             MAIN CONTENT
+        ====================================================== -->
+
+        <main class="main-content">
+
+
+            <!-- =================================================
+                 TOPBAR
+            ================================================== -->
+
+            <header class="topbar">
+
+
+                <div class="topbar-left">
+
+
+                    <button
+                        class="menu-button"
+                        id="menuButton"
+                        type="button">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+
+                    <div>
+
+                        <span class="page-label">
+                            EXPLORAR
+                        </span>
+
+                        <h1>
+                            Categorías
+                        </h1>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- TOPBAR RIGHT -->
+
+                <div class="topbar-right">
+
+
+                    <button
+                        class="notification-button"
+                        id="notificationButton"
+                        type="button"
+                        aria-label="Notificaciones">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span
+                            class="notification-dot"
+                            id="notificationDot">
+                        </span>
+
+                    </button>
+
+
+                    <div class="topbar-user">
+
+
+                        <div class="topbar-avatar">
+
+                            <span id="topbarUserInitial">
+                                U
+                            </span>
+
+                        </div>
+
+
+                        <div class="topbar-user-info">
+
+                            <strong id="topbarUserName">
+                                Usuario
+                            </strong>
+
+                            <span id="topbarUserEmail">
+                                usuario@zentryx.com
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </header>
+
+
+            <!-- =================================================
+                 CONTENIDO DE CATEGORÍAS
+            ================================================== -->
+
+            <section class="categories-content">
+
+
+                <!-- INTRODUCCIÓN -->
+
+                <div class="categories-header">
+
+
+                    <div>
+
+                        <span class="section-label">
+                            DESCUBRE
+                        </span>
+
+                        <h2>
+                            Explora por categorías
+                        </h2>
+
+                        <p>
+                            Encuentra servicios según lo que necesitas
+                            y conecta con personas que pueden ayudarte.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="servicios.html"
+                        class="explore-button">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        Explorar servicios
+
+                    </a>
+
+
+                </div>
+
+
+                <!-- =================================================
+                     BUSCADOR
+                ================================================== -->
+
+                <div class="categories-search">
+
+
+                    <div class="search-input-wrapper">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            id="categorySearch"
+                            placeholder="Buscar una categoría..."
+                            autocomplete="off">
+
+                        <button
+                            type="button"
+                            id="clearSearch"
+                            class="clear-search"
+                            aria-label="Limpiar búsqueda">
+
+                            <i class="fa-solid fa-xmark"></i>
+
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- =================================================
+                     ESTADÍSTICAS
+                ================================================== -->
+
+                <div class="category-stats">
+
+
+                    <div class="category-stat">
+
+                        <div class="category-stat-icon purple">
+
+                            <i class="fa-solid fa-grip"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Categorías
+                            </span>
+
+                            <strong id="totalCategories">
+                                0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="category-stat">
+
+                        <div class="category-stat-icon green">
+
+                            <i class="fa-solid fa-briefcase"></i>
+
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Servicios disponibles
+                            </span>
+
+                            <strong id="totalServices">
+                                0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- =================================================
+                     GRID DE CATEGORÍAS
+                ================================================== -->
+
+                <div
+                    class="categories-grid"
+                    id="categoriesGrid">
+
+
+                    <!--
+
+                        Las categorías serán
+                        generadas mediante JavaScript.
+
+                    -->
+
+
+                </div>
+
+
+                <!-- =================================================
+                     ESTADO SIN RESULTADOS
+                ================================================== -->
+
+                <div
+                    class="empty-categories"
+                    id="emptyCategories"
+                    hidden>
+
+
+                    <div class="empty-categories-icon">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                    </div>
+
+
+                    <h3>
+                        No encontramos categorías
+                    </h3>
+
+
+                    <p>
+                        Intenta buscar con otro nombre o revisa
+                        todas las categorías disponibles.
+                    </p>
+
+
+                    <button
+                        type="button"
+                        id="resetSearch"
+                        class="reset-search">
+
+                        Mostrar todas
+
+                    </button>
+
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+
+        <!-- =====================================================
+             PANEL DE NOTIFICACIONES
+        ====================================================== -->
+
+        <div
+            class="notification-panel"
+            id="notificationPanel">
+
+
+            <div class="notification-header">
+
+
+                <div>
+
+                    <span>
+                        CENTRO
+                    </span>
+
+                    <h3>
+                        Notificaciones
+                    </h3>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    id="closeNotifications"
+                    aria-label="Cerrar">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+
+            </div>
+
+
+            <div
+                class="notification-list"
+                id="notificationList">
+
+
+                <div class="notification-empty">
+
+
+                    <div>
+
+                        <i class="fa-regular fa-bell"></i>
+
+                    </div>
+
+
+                    <p>
+                        No tienes notificaciones nuevas.
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <!-- =====================================================
+             TOAST
+        ====================================================== -->
+
+        <div
+            class="toast"
+            id="toast">
+
+
+            <div class="toast-icon">
+
+                <i
+                    class="fa-solid fa-circle-check"
+                    id="toastIcon">
+                </i>
+
+            </div>
+
+
+            <div>
+
+                <strong id="toastTitle">
+                    Éxito
+                </strong>
+
+                <p id="toastMessage">
+                    Operación realizada correctamente.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
+    <script src="../js/categorias.js"></script>
+
+
+</body>
+
+</html>

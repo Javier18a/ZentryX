@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ZentryX | Explorar servicios</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/servicios.css">
+
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         CONTENEDOR PRINCIPAL
+    ====================================================== -->
+
+    <div class="app-container">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside class="sidebar" id="sidebar">
+
+
+            <!-- HEADER -->
+
+            <div class="sidebar-header">
+
+                <a href="dashboard.html" class="logo">
+
+                    Zentry<span>X</span>
+
+                </a>
+
+
+                <button class="sidebar-close" id="sidebarClose" type="button" aria-label="Cerrar menú">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- PERFIL -->
+
+            <div class="sidebar-profile">
+
+                <div class="profile-avatar" id="profileAvatar">
+
+                    U
+
+                </div>
+
+
+                <div class="profile-info">
+
+                    <strong id="sidebarUserName">
+                        Usuario
+                    </strong>
+
+                    <span id="sidebarUserRole">
+                        Usuario
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 NAVEGACIÓN
+            ================================================== -->
+
+            <nav class="sidebar-nav">
+
+
+                <!-- PRINCIPAL -->
+
+                <div class="nav-title">
+                    PRINCIPAL
+                </div>
+
+
+                <a href="dashboard.html" class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-house"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Inicio
+                    </span>
+
+                </a>
+
+
+                <!-- EXPLORAR -->
+
+                <div class="nav-title">
+                    EXPLORAR
+                </div>
+
+
+                <a href="servicios.html" class="nav-item active">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Explorar servicios
+                    </span>
+
+                </a>
+
+
+                <a href="categorias.html" class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-grip"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Categorías
+                    </span>
+
+                </a>
+
+
+                <!-- SERVICIOS -->
+
+                <div class="nav-title">
+                    SERVICIOS
+                </div>
+
+
+                <a href="publicar.html" class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Publicar servicio
+                    </span>
+
+                </a>
+
+
+                <a href="mis-servicios.html" class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-list"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mis servicios
+                    </span>
+
+                </a>
+
+
+                <a href="mis-solicitudes.html" class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mis solicitudes
+                    </span>
+
+                </a>
+
+
+                <!-- COMUNIDAD -->
+
+                <div class="nav-title">
+                    COMUNIDAD
+                </div>
+
+                <a href="mensajes.html" class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-message"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mensajes
+                    </span>
+
+                </a>
+
+
+                <!-- CUENTA -->
+
+                <div class="nav-title">
+                    CUENTA
+                </div>
+
+
+                <a href="perfil.html" class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mi perfil
+                    </span>
+
+                </a>
+
+
+                <a href="configuracion.html" class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-gear"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Configuración
+                    </span>
+
+                </a>
+
+
+                <a href="perfil.html#seguridad" class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Seguridad
+                    </span>
+
+                </a>
+
+
+                <!-- CERRAR SESIÓN -->
+
+                <button class="nav-item logout-button" id="logoutButton" type="button">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Cerrar sesión
+                    </span>
+
+                </button>
+
+            </nav>
+
+
+            <!-- FOOTER -->
+
+            <div class="sidebar-footer">
+
+                <small>
+                    ZentryX
+                </small>
+
+                <span>
+                    Sistema de gestión
+                </span>
+
+            </div>
+
+        </aside>
+
+
+        <!--  OVERLAY SIDEBAR-->
+
+        <div class="sidebar-overlay" id="sidebarOverlay">
+        </div>
+
+
+        <!-- CONTENIDO PRINCIPAL -->
+
+        <main class="main-content">
+
+
+            <!-- TOPBAR -->
+
+            <header class="topbar">
+
+
+                <div class="topbar-left">
+
+
+                    <button class="menu-button" id="menuButton" type="button" aria-label="Abrir menú">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+
+                    <div>
+
+                        <span class="page-label">
+                            EXPLORAR
+                        </span>
+
+                        <h1>
+                            Servicios
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TOPBAR RIGHT -->
+
+                <div class="topbar-right">
+
+
+                    <!-- NOTIFICACIONES -->
+
+                    <button class="notification-button" id="notificationButton" type="button"
+                        aria-label="Notificaciones">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="notification-dot" id="notificationDot">
+                        </span>
+
+                    </button>
+
+
+                    <!-- USUARIO -->
+
+                    <div class="topbar-user">
+
+
+                        <div class="topbar-avatar" id="topbarAvatar">
+
+                            U
+
+                        </div>
+
+
+                        <div class="topbar-user-info">
+
+                            <strong id="topbarUserName">
+                                Usuario
+                            </strong>
+
+                            <span id="topbarUserEmail">
+                                usuario@zentryx.com
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================================
+                 CONTENIDO SERVICIOS
+            ================================================== -->
+
+            <section class="services-content">
+
+
+                <!-- =================================================
+                     ENCABEZADO
+                ================================================== -->
+
+                <section class="services-header">
+
+
+                    <div class="services-heading">
+
+                        <span>
+                            DESCUBRE
+                        </span>
+
+                        <h2>
+                            Encuentra el servicio que necesitas
+                        </h2>
+
+                        <p>
+                            Explora servicios ofrecidos por personas
+                            dentro de la comunidad ZentryX.
+                        </p>
+
+                    </div>
+
+
+                    <a href="publicar.html" class="publish-button">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Publicar servicio
+
+                    </a>
+
+                </section>
+
+
+                <!-- =================================================
+                     BUSCADOR
+                ================================================== -->
+
+                <section class="search-section">
+
+
+                    <div class="search-box">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input type="search" id="serviceSearch" placeholder="¿Qué servicio estás buscando?"
+                            autocomplete="off">
+
+                        <button type="button" id="clearSearch" aria-label="Limpiar búsqueda">
+
+                            <i class="fa-solid fa-xmark"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <button class="filter-button" id="filterButton" type="button">
+
+                        <i class="fa-solid fa-sliders"></i>
+
+                        Filtros
+
+                    </button>
+
+                </section>
+
+
+                <!-- =================================================
+                     CATEGORÍAS
+                ================================================== -->
+
+                <section class="category-section">
+
+
+                    <div class="section-label">
+
+                        <span>
+                            CATEGORÍAS
+                        </span>
+
+                    </div>
+
+
+                    <div class="category-list" id="categoryList">
+
+
+                        <button class="category-chip active" type="button" data-category="todos">
+
+                            Todos
+
+                        </button>
+
+
+                        <button class="category-chip" type="button" data-category="tecnologia">
+
+                            <i class="fa-solid fa-laptop-code"></i>
+
+                            Tecnología
+
+                        </button>
+
+
+                        <button class="category-chip" type="button" data-category="diseno">
+
+                            <i class="fa-solid fa-pen-ruler"></i>
+
+                            Diseño
+
+                        </button>
+
+
+                        <button class="category-chip" type="button" data-category="educacion">
+
+                            <i class="fa-solid fa-graduation-cap"></i>
+
+                            Educación
+
+                        </button>
+
+
+                        <button class="category-chip" type="button" data-category="hogar">
+
+                            <i class="fa-solid fa-house"></i>
+
+                            Hogar
+
+                        </button>
+
+
+                        <button class="category-chip" type="button" data-category="negocios">
+
+                            <i class="fa-solid fa-briefcase"></i>
+
+                            Negocios
+
+                        </button>
+
+
+                        <button class="category-chip" type="button" data-category="marketing">
+
+                            <i class="fa-solid fa-bullhorn"></i>
+
+                            Marketing
+
+                        </button>
+
+
+                        <button class="category-chip" type="button" data-category="otros">
+
+                            <i class="fa-solid fa-ellipsis"></i>
+
+                            Otros
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     BARRA DE RESULTADOS
+                ================================================== -->
+
+                <section class="results-toolbar">
+
+
+                    <div>
+
+                        <strong id="resultsCount">
+                            0 servicios
+                        </strong>
+
+                        <span>
+                            disponibles para ti
+                        </span>
+
+                    </div>
+
+
+                    <div class="sort-container">
+
+                        <label for="sortServices">
+                            Ordenar por
+                        </label>
+
+                        <select id="sortServices">
+
+                            <option value="recent">
+                                Más recientes
+                            </option>
+
+                            <option value="rating">
+                                Mejor valorados
+                            </option>
+
+                            <option value="price-low">
+                                Precio: menor a mayor
+                            </option>
+
+                            <option value="price-high">
+                                Precio: mayor a menor
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     FILTROS AVANZADOS
+                ================================================== -->
+
+                <section class="advanced-filters" id="advancedFilters">
+
+
+                    <div class="filter-group">
+
+                        <label for="locationFilter">
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Ubicación
+                        </label>
+
+                        <input type="text" id="locationFilter" placeholder="Ej. Managua">
+
+                    </div>
+
+
+                    <div class="filter-group">
+
+                        <label for="priceFilter">
+
+                            <i class="fa-solid fa-dollar-sign"></i>
+
+                            Precio máximo
+
+                        </label>
+
+                        <input type="number" id="priceFilter" min="0" placeholder="Ej. 50">
+
+                    </div>
+
+
+                    <div class="filter-group">
+
+                        <label for="ratingFilter">
+
+                            <i class="fa-solid fa-star"></i>
+
+                            Valoración mínima
+
+                        </label>
+
+                        <select id="ratingFilter">
+
+                            <option value="0">
+                                Cualquier valoración
+                            </option>
+
+                            <option value="3">
+                                3 estrellas o más
+                            </option>
+
+                            <option value="4">
+                                4 estrellas o más
+                            </option>
+
+                            <option value="4.5">
+                                4.5 estrellas o más
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button class="clear-filters" id="clearFilters" type="button">
+
+                        <i class="fa-solid fa-rotate-left"></i>
+
+                        Limpiar filtros
+
+                    </button>
+
+                </section>
+
+
+                <!-- =================================================
+                     GRID DE SERVICIOS
+                ================================================== -->
+
+                <section class="services-grid" id="servicesGrid">
+
+
+                    <!--
+                        Los servicios serán generados
+                        dinámicamente mediante JavaScript.
+                    -->
+
+
+                </section>
+
+
+                <!-- =================================================
+                     ESTADO VACÍO
+                ================================================== -->
+
+                <section class="services-empty" id="servicesEmpty" hidden>
+
+
+                    <div class="empty-icon">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                    </div>
+
+
+                    <h3>
+                        No encontramos servicios
+                    </h3>
+
+
+                    <p>
+                        Intenta cambiar tu búsqueda o modificar
+                        los filtros utilizados.
+                    </p>
+
+
+                    <button type="button" id="emptyClearFilters">
+
+                        Limpiar búsqueda
+
+                    </button>
+
+                </section>
+
+
+                <!-- =================================================
+                     PAGINACIÓN
+                ================================================== -->
+
+                <div class="pagination" id="pagination">
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- =====================================================
+         PANEL DE NOTIFICACIONES
+    ====================================================== -->
+
+    <div class="notification-panel" id="notificationPanel">
+
+
+        <div class="notification-header">
+
+            <div>
+
+                <span>
+                    CENTRO
+                </span>
+
+                <h3>
+                    Notificaciones
+                </h3>
+
+            </div>
+
+
+            <button id="closeNotifications" type="button" aria-label="Cerrar notificaciones">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <div class="notification-list" id="notificationList">
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MODAL CERRAR SESIÓN
+    ====================================================== -->
+
+    <div class="modal" id="logoutModal">
+
+
+        <div class="modal-overlay" id="logoutModalOverlay">
+        </div>
+
+
+        <div class="modal-content">
+
+
+            <div class="modal-icon">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+            </div>
+
+
+            <h2>
+                ¿Cerrar sesión?
+            </h2>
+
+
+            <p>
+                Tu sesión actual se cerrará y tendrás que
+                iniciar sesión nuevamente para acceder a ZentryX.
+            </p>
+
+
+            <div class="modal-actions">
+
+
+                <button class="modal-cancel" id="cancelLogout" type="button">
+
+                    Cancelar
+
+                </button>
+
+
+                <button class="modal-confirm" id="confirmLogout" type="button">
+
+                    Cerrar sesión
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         TOAST
+    ====================================================== -->
+
+    <div class="toast" id="toast">
+
+
+        <div class="toast-icon" id="toastIcon">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+        </div>
+
+
+        <div>
+
+            <strong id="toastTitle">
+                Correcto
+            </strong>
+
+            <p id="toastMessage">
+                Operación realizada correctamente.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="../js/servicios.js"></script>
+
+</body>
+
+</html>

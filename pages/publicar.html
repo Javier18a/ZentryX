@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>ZentryX | Publicar servicio</title>
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="../css/publicar.css">
+
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         CONTENEDOR PRINCIPAL
+    ====================================================== -->
+
+    <div class="app-container">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside
+            class="sidebar"
+            id="sidebar">
+
+
+            <!-- HEADER -->
+
+            <div class="sidebar-header">
+
+                <a
+                    href="dashboard.html"
+                    class="logo">
+
+                    Zentry<span>X</span>
+
+                </a>
+
+
+                <button
+                    class="sidebar-close"
+                    id="sidebarClose"
+                    type="button"
+                    aria-label="Cerrar menú">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- PERFIL -->
+
+            <div class="sidebar-profile">
+
+                <div
+                    class="profile-avatar"
+                    id="profileAvatar">
+
+                    U
+
+                </div>
+
+
+                <div class="profile-info">
+
+                    <strong id="sidebarUserName">
+                        Usuario
+                    </strong>
+
+                    <span id="sidebarUserRole">
+                        Usuario
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 NAVEGACIÓN
+            ================================================== -->
+
+            <nav class="sidebar-nav">
+
+
+                <!-- PRINCIPAL -->
+
+                <div class="nav-title">
+                    PRINCIPAL
+                </div>
+
+
+                <a
+                    href="dashboard.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-house"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Inicio
+                    </span>
+
+                </a>
+
+
+                <!-- EXPLORAR -->
+
+                <div class="nav-title">
+                    EXPLORAR
+                </div>
+
+
+                <a
+                    href="servicios.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Explorar servicios
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="categorias.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-grip"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Categorías
+                    </span>
+
+                </a>
+
+
+                <!-- SERVICIOS -->
+
+                <div class="nav-title">
+                    SERVICIOS
+                </div>
+
+
+                <a
+                    href="publicar.html"
+                    class="nav-item active">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Publicar servicio
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="mis-servicios.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-list"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mis servicios
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="mis-solicitudes.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mis solicitudes
+                    </span>
+
+                </a>
+
+
+                <!-- COMUNIDAD -->
+
+                <div class="nav-title">
+                    COMUNIDAD
+                </div>
+
+
+                <a
+                    href="favoritos.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Favoritos
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="mensajes.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-message"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mensajes
+                    </span>
+
+                </a>
+
+
+                <!-- CUENTA -->
+
+                <div class="nav-title">
+                    CUENTA
+                </div>
+
+
+                <a
+                    href="perfil.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Mi perfil
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="configuracion.html"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-gear"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Configuración
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="perfil.html#seguridad"
+                    class="nav-item">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Seguridad
+                    </span>
+
+                </a>
+
+
+                <!-- CERRAR SESIÓN -->
+
+                <button
+                    class="nav-item logout-button"
+                    id="logoutButton"
+                    type="button">
+
+                    <span class="nav-icon">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </span>
+
+                    <span class="nav-text">
+                        Cerrar sesión
+                    </span>
+
+                </button>
+
+            </nav>
+
+
+            <!-- FOOTER -->
+
+            <div class="sidebar-footer">
+
+                <small>
+                    ZentryX
+                </small>
+
+                <span>
+                    Sistema de gestión
+                </span>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =================================================
+             OVERLAY SIDEBAR
+        ================================================== -->
+
+        <div
+            class="sidebar-overlay"
+            id="sidebarOverlay">
+        </div>
+
+
+        <!-- =================================================
+             CONTENIDO PRINCIPAL
+        ================================================== -->
+
+        <main class="main-content">
+
+
+            <!-- =================================================
+                 TOPBAR
+            ================================================== -->
+
+            <header class="topbar">
+
+
+                <div class="topbar-left">
+
+
+                    <button
+                        class="menu-button"
+                        id="menuButton"
+                        type="button"
+                        aria-label="Abrir menú">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+
+                    <div>
+
+                        <span class="page-label">
+                            SERVICIOS
+                        </span>
+
+                        <h1>
+                            Publicar servicio
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TOPBAR RIGHT -->
+
+                <div class="topbar-right">
+
+
+                    <!-- NOTIFICACIONES -->
+
+                    <button
+                        class="notification-button"
+                        id="notificationButton"
+                        type="button"
+                        aria-label="Notificaciones">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span
+                            class="notification-dot"
+                            id="notificationDot">
+                        </span>
+
+                    </button>
+
+
+                    <!-- USUARIO -->
+
+                    <div class="topbar-user">
+
+
+                        <div
+                            class="topbar-avatar"
+                            id="topbarAvatar">
+
+                            U
+
+                        </div>
+
+
+                        <div class="topbar-user-info">
+
+                            <strong id="topbarUserName">
+                                Usuario
+                            </strong>
+
+                            <span id="topbarUserEmail">
+                                usuario@zentryx.com
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================================
+                 CONTENIDO PUBLICAR
+            ================================================== -->
+
+            <section class="publish-content">
+
+
+                <!-- =================================================
+                     ENCABEZADO
+                ================================================== -->
+
+                <section class="publish-header">
+
+
+                    <div class="publish-heading">
+
+                        <span>
+                            NUEVO SERVICIO
+                        </span>
+
+                        <h2>
+                            Publica lo que sabes hacer
+                        </h2>
+
+                        <p>
+                            Comparte tus conocimientos, habilidades
+                            o servicios con la comunidad ZentryX.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="servicios.html"
+                        class="back-button">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                        Volver a servicios
+
+                    </a>
+
+                </section>
+
+
+                <!-- =================================================
+                     FORMULARIO
+                ================================================== -->
+
+                <form
+                    class="publish-form"
+                    id="publishForm"
+                    novalidate>
+
+
+                    <!-- =================================================
+                         INFORMACIÓN DEL SERVICIO
+                    ================================================== -->
+
+                    <section class="form-section">
+
+
+                        <div class="form-section-header">
+
+                            <div class="form-section-icon">
+
+                                <i class="fa-solid fa-briefcase"></i>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    INFORMACIÓN PRINCIPAL
+                                </span>
+
+                                <h3>
+                                    Describe tu servicio
+                                </h3>
+
+                                <p>
+                                    Proporciona la información necesaria
+                                    para que otros usuarios conozcan tu oferta.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- TÍTULO -->
+
+                        <div class="form-group">
+
+                            <label for="serviceTitle">
+
+                                Nombre del servicio
+
+                                <span>
+                                    *
+                                </span>
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="serviceTitle"
+                                name="serviceTitle"
+                                placeholder="Ej. Diseño de páginas web"
+                                maxlength="100"
+                                required>
+
+                            <small>
+                                Usa un nombre claro y fácil de identificar.
+                            </small>
+
+                        </div>
+
+
+                        <!-- CATEGORÍA -->
+
+                        <div class="form-row">
+
+
+                            <div class="form-group">
+
+                                <label for="serviceCategory">
+
+                                    Categoría
+
+                                    <span>
+                                        *
+                                    </span>
+
+                                </label>
+
+                                <div class="input-icon">
+
+                                    <i class="fa-solid fa-layer-group"></i>
+
+                                    <select
+                                        id="serviceCategory"
+                                        name="serviceCategory"
+                                        required>
+
+                                        <option
+                                            value=""
+                                            selected
+                                            disabled>
+
+                                            Selecciona una categoría
+
+                                        </option>
+
+                                        <option value="tecnologia">
+                                            Tecnología
+                                        </option>
+
+                                        <option value="diseno">
+                                            Diseño
+                                        </option>
+
+                                        <option value="educacion">
+                                            Educación
+                                        </option>
+
+                                        <option value="hogar">
+                                            Hogar
+                                        </option>
+
+                                        <option value="negocios">
+                                            Negocios
+                                        </option>
+
+                                        <option value="marketing">
+                                            Marketing
+                                        </option>
+
+                                        <option value="otros">
+                                            Otros
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- MODALIDAD -->
+
+                            <div class="form-group">
+
+                                <label for="serviceModality">
+
+                                    Modalidad
+
+                                    <span>
+                                        *
+                                    </span>
+
+                                </label>
+
+                                <div class="input-icon">
+
+                                    <i class="fa-solid fa-location-dot"></i>
+
+                                    <select
+                                        id="serviceModality"
+                                        name="serviceModality"
+                                        required>
+
+                                        <option
+                                            value=""
+                                            selected
+                                            disabled>
+
+                                            Selecciona una modalidad
+
+                                        </option>
+
+                                        <option value="presencial">
+                                            Presencial
+                                        </option>
+
+                                        <option value="virtual">
+                                            Virtual
+                                        </option>
+
+                                        <option value="ambas">
+                                            Presencial y virtual
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- DESCRIPCIÓN -->
+
+                        <div class="form-group">
+
+                            <label for="serviceDescription">
+
+                                Descripción
+
+                                <span>
+                                    *
+                                </span>
+
+                            </label>
+
+                            <textarea
+                                id="serviceDescription"
+                                name="serviceDescription"
+                                rows="6"
+                                maxlength="600"
+                                placeholder="Explica qué ofreces, qué incluye tu servicio y por qué deberían contratarte."
+                                required></textarea>
+
+                            <div class="field-footer">
+
+                                <small>
+                                    Sé específico para generar confianza.
+                                </small>
+
+                                <span id="descriptionCounter">
+                                    0 / 600
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =================================================
+                         PRECIO Y UBICACIÓN
+                    ================================================== -->
+
+                    <section class="form-section">
+
+
+                        <div class="form-section-header">
+
+                            <div class="form-section-icon">
+
+                                <i class="fa-solid fa-tag"></i>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    PRECIO Y DISPONIBILIDAD
+                                </span>
+
+                                <h3>
+                                    Define las condiciones
+                                </h3>
+
+                                <p>
+                                    Indica cuánto cuesta tu servicio y
+                                    dónde puedes ofrecerlo.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+
+                            <!-- PRECIO -->
+
+                            <div class="form-group">
+
+                                <label for="servicePrice">
+
+                                    Precio
+
+                                    <span>
+                                        *
+                                    </span>
+
+                                </label>
+
+                                <div class="price-input">
+
+                                    <span>
+                                        C$
+                                    </span>
+
+                                    <input
+                                        type="number"
+                                        id="servicePrice"
+                                        name="servicePrice"
+                                        min="0"
+                                        step="0.01"
+                                        placeholder="0.00"
+                                        required>
+
+                                </div>
+
+                                <small>
+                                    Indica el precio base de tu servicio.
+                                </small>
+
+                            </div>
+
+
+                            <!-- TIPO DE PRECIO -->
+
+                            <div class="form-group">
+
+                                <label for="priceType">
+
+                                    Tipo de precio
+
+                                    <span>
+                                        *
+                                    </span>
+
+                                </label>
+
+                                <div class="input-icon">
+
+                                    <i class="fa-solid fa-money-bill"></i>
+
+                                    <select
+                                        id="priceType"
+                                        name="priceType"
+                                        required>
+
+                                        <option
+                                            value=""
+                                            selected
+                                            disabled>
+
+                                            Selecciona una opción
+
+                                        </option>
+
+                                        <option value="servicio">
+                                            Por servicio
+                                        </option>
+
+                                        <option value="hora">
+                                            Por hora
+                                        </option>
+
+                                        <option value="dia">
+                                            Por día
+                                        </option>
+
+                                        <option value="proyecto">
+                                            Por proyecto
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- UBICACIÓN -->
+
+                        <div class="form-group">
+
+                            <label for="serviceLocation">
+
+                                Ubicación
+
+                                <span>
+                                    *
+                                </span>
+
+                            </label>
+
+                            <div class="input-icon">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                <input
+                                    type="text"
+                                    id="serviceLocation"
+                                    name="serviceLocation"
+                                    placeholder="Ej. Managua, Nicaragua"
+                                    maxlength="100"
+                                    required>
+
+                            </div>
+
+                            <small>
+                                Indica dónde puedes prestar el servicio.
+                            </small>
+
+                        </div>
+
+
+                        <!-- DISPONIBILIDAD -->
+
+                        <div class="form-group">
+
+                            <label for="serviceAvailability">
+
+                                Disponibilidad
+
+                            </label>
+
+                            <textarea
+                                id="serviceAvailability"
+                                name="serviceAvailability"
+                                rows="3"
+                                maxlength="250"
+                                placeholder="Ej. Lunes a viernes de 8:00 AM a 5:00 PM."></textarea>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =================================================
+                         IMAGEN / PRESENTACIÓN
+                    ================================================== -->
+
+                    <section class="form-section">
+
+
+                        <div class="form-section-header">
+
+                            <div class="form-section-icon">
+
+                                <i class="fa-solid fa-image"></i>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    PRESENTACIÓN
+                                </span>
+
+                                <h3>
+                                    Agrega una imagen
+                                </h3>
+
+                                <p>
+                                    Una buena imagen puede ayudar a que
+                                    más personas se interesen en tu servicio.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="image-upload"
+                            id="imageUpload">
+
+
+                            <input
+                                type="file"
+                                id="serviceImage"
+                                name="serviceImage"
+                                accept="image/*"
+                                hidden>
+
+
+                            <div
+                                class="upload-placeholder"
+                                id="uploadPlaceholder">
+
+                                <div class="upload-icon">
+
+                                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                                </div>
+
+                                <strong>
+                                    Selecciona una imagen
+                                </strong>
+
+                                <span>
+                                    JPG, PNG o WEBP
+                                </span>
+
+                                <button
+                                    type="button"
+                                    id="selectImageButton">
+
+                                    Elegir imagen
+
+                                </button>
+
+                            </div>
+
+
+                            <div
+                                class="image-preview"
+                                id="imagePreview"
+                                hidden>
+
+                                <img
+                                    id="previewImage"
+                                    src=""
+                                    alt="Vista previa del servicio">
+
+                                <button
+                                    type="button"
+                                    id="removeImage"
+                                    aria-label="Eliminar imagen">
+
+                                    <i class="fa-solid fa-xmark"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =================================================
+                         CONFIRMACIÓN
+                    ================================================== -->
+
+                    <section class="publish-confirmation">
+
+
+                        <div class="confirmation-icon">
+
+                            <i class="fa-solid fa-circle-info"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                Antes de publicar
+                            </strong>
+
+                            <p>
+                                Verifica que la información de tu servicio
+                                sea correcta. Podrás gestionar tus servicios
+                                posteriormente desde "Mis servicios".
+                            </p>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =================================================
+                         ACCIONES
+                    ================================================== -->
+
+                    <div class="form-actions">
+
+
+                        <a
+                            href="servicios.html"
+                            class="cancel-button">
+
+                            Cancelar
+
+                        </a>
+
+
+                        <button
+                            type="submit"
+                            class="submit-button"
+                            id="publishButton">
+
+                            <i class="fa-solid fa-paper-plane"></i>
+
+                            Publicar servicio
+
+                        </button>
+
+                    </div>
+
+
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- =====================================================
+         PANEL DE NOTIFICACIONES
+    ====================================================== -->
+
+    <div
+        class="notification-panel"
+        id="notificationPanel">
+
+
+        <div class="notification-header">
+
+            <div>
+
+                <span>
+                    CENTRO
+                </span>
+
+                <h3>
+                    Notificaciones
+                </h3>
+
+            </div>
+
+
+            <button
+                id="closeNotifications"
+                type="button"
+                aria-label="Cerrar notificaciones">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <div
+            class="notification-list"
+            id="notificationList">
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MODAL CERRAR SESIÓN
+    ====================================================== -->
+
+    <div
+        class="modal"
+        id="logoutModal">
+
+
+        <div
+            class="modal-overlay"
+            id="logoutModalOverlay">
+        </div>
+
+
+        <div class="modal-content">
+
+
+            <div class="modal-icon">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+            </div>
+
+
+            <h2>
+                ¿Cerrar sesión?
+            </h2>
+
+
+            <p>
+                Tu sesión actual se cerrará y tendrás que
+                iniciar sesión nuevamente para acceder a ZentryX.
+            </p>
+
+
+            <div class="modal-actions">
+
+
+                <button
+                    class="modal-cancel"
+                    id="cancelLogout"
+                    type="button">
+
+                    Cancelar
+
+                </button>
+
+
+                <button
+                    class="modal-confirm"
+                    id="confirmLogout"
+                    type="button">
+
+                    Cerrar sesión
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         TOAST
+    ====================================================== -->
+
+    <div
+        class="toast"
+        id="toast">
+
+
+        <div
+            class="toast-icon"
+            id="toastIcon">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+        </div>
+
+
+        <div>
+
+            <strong id="toastTitle">
+                Correcto
+            </strong>
+
+            <p id="toastMessage">
+                Operación realizada correctamente.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="../js/publicar.js"></script>
+
+</body>
+
+</html>

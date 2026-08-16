@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ZentryX | Detalle del servicio</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/servicio-detalle.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         CONTENEDOR PRINCIPAL
+    ====================================================== -->
+
+    <div class="app-container">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside class="sidebar" id="sidebar">
+
+
+            <!-- HEADER -->
+
+            <div class="sidebar-header">
+
+                <a href="dashboard.html" class="logo">
+
+                    Zentry<span>X</span>
+
+                </a>
+
+
+                <button
+                    class="sidebar-close"
+                    id="sidebarClose"
+                    type="button"
+                    aria-label="Cerrar menú">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- PERFIL -->
+
+            <div class="sidebar-profile">
+
+                <div class="profile-avatar" id="profileAvatar">
+
+                    U
+
+                </div>
+
+
+                <div class="profile-info">
+
+                    <strong id="sidebarUserName">
+                        Usuario
+                    </strong>
+
+                    <span id="sidebarUserRole">
+                        Usuario
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 NAVEGACIÓN
+            ================================================== -->
+
+            <nav class="sidebar-nav">
+
+
+                <!-- PRINCIPAL -->
+
+                <div class="nav-title">
+                    PRINCIPAL
+                </div>
+
+
+                <a href="dashboard.html" class="nav-item">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-house"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Inicio
+                    </span>
+
+                </a>
+
+
+                <!-- EXPLORAR -->
+
+                <div class="nav-title">
+                    EXPLORAR
+                </div>
+
+
+                <a href="servicios.html" class="nav-item active">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Explorar servicios
+                    </span>
+
+                </a>
+
+
+                <a href="categorias.html" class="nav-item">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-grip"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Categorías
+                    </span>
+
+                </a>
+
+
+                <!-- SERVICIOS -->
+
+                <div class="nav-title">
+                    SERVICIOS
+                </div>
+
+
+                <a href="publicar.html" class="nav-item">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Publicar servicio
+                    </span>
+
+                </a>
+
+
+                <a href="mis-servicios.html" class="nav-item">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-list"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Mis servicios
+                    </span>
+
+                </a>
+
+
+                <a href="mis-solicitudes.html" class="nav-item">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Mis solicitudes
+                    </span>
+
+                </a>
+
+
+                <!-- COMUNIDAD -->
+
+                <div class="nav-title">
+                    COMUNIDAD
+                </div>
+
+
+                <a href="mensajes.html" class="nav-item">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-message"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Mensajes
+                    </span>
+
+                </a>
+
+
+                <!-- CUENTA -->
+
+                <div class="nav-title">
+                    CUENTA
+                </div>
+
+
+                <a href="perfil.html" class="nav-item">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Mi perfil
+                    </span>
+
+                </a>
+
+
+                <a href="configuracion.html" class="nav-item">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Configuración
+                    </span>
+
+                </a>
+
+
+                <a href="perfil.html#seguridad" class="nav-item">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Seguridad
+                    </span>
+
+                </a>
+
+
+                <!-- CERRAR SESIÓN -->
+
+                <button
+                    class="nav-item logout-button"
+                    id="logoutButton"
+                    type="button">
+
+                    <span class="nav-icon">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                    </span>
+
+                    <span class="nav-text">
+                        Cerrar sesión
+                    </span>
+
+                </button>
+
+            </nav>
+
+
+            <!-- FOOTER -->
+
+            <div class="sidebar-footer">
+
+                <small>
+                    ZentryX
+                </small>
+
+                <span>
+                    Sistema de gestión
+                </span>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =================================================
+             OVERLAY SIDEBAR
+        ================================================== -->
+
+        <div
+            class="sidebar-overlay"
+            id="sidebarOverlay">
+        </div>
+
+
+        <!-- =================================================
+             CONTENIDO PRINCIPAL
+        ================================================== -->
+
+        <main class="main-content">
+
+
+            <!-- =================================================
+                 TOPBAR
+            ================================================== -->
+
+            <header class="topbar">
+
+
+                <div class="topbar-left">
+
+
+                    <button
+                        class="menu-button"
+                        id="menuButton"
+                        type="button"
+                        aria-label="Abrir menú">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+
+                    <div>
+
+                        <span class="page-label">
+                            SERVICIO
+                        </span>
+
+                        <h1>
+                            Detalle del servicio
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TOPBAR RIGHT -->
+
+                <div class="topbar-right">
+
+
+                    <!-- NOTIFICACIONES -->
+
+                    <button
+                        class="notification-button"
+                        id="notificationButton"
+                        type="button"
+                        aria-label="Notificaciones">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span
+                            class="notification-dot"
+                            id="notificationDot">
+                        </span>
+
+                    </button>
+
+
+                    <!-- USUARIO -->
+
+                    <div class="topbar-user">
+
+
+                        <div
+                            class="topbar-avatar"
+                            id="topbarAvatar">
+
+                            U
+
+                        </div>
+
+
+                        <div class="topbar-user-info">
+
+                            <strong id="topbarUserName">
+                                Usuario
+                            </strong>
+
+                            <span id="topbarUserEmail">
+                                usuario@zentryx.com
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================================
+                 CONTENIDO DETALLE
+            ================================================== -->
+
+            <section class="detail-content">
+
+
+                <!-- =================================================
+                     BOTÓN VOLVER
+                ================================================== -->
+
+                <div class="detail-back">
+
+                    <a href="servicios.html">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                        Volver a servicios
+
+                    </a>
+
+                </div>
+
+
+                <!-- =================================================
+                     ESTADO DE CARGA
+                ================================================== -->
+
+                <section
+                    class="detail-loading"
+                    id="detailLoading">
+
+                    <div class="loading-spinner">
+
+                        <i class="fa-solid fa-spinner"></i>
+
+                    </div>
+
+                    <p>
+                        Cargando información del servicio...
+                    </p>
+
+                </section>
+
+
+                <!-- =================================================
+                     SERVICIO
+                ================================================== -->
+
+                <section
+                    class="service-detail"
+                    id="serviceDetail"
+                    hidden>
+
+
+                    <!-- =================================================
+                         ENCABEZADO
+                    ================================================== -->
+
+                    <div class="detail-header">
+
+
+                        <div class="detail-category">
+
+                            <i
+                                class="fa-solid fa-layer-group"
+                                id="serviceCategoryIcon">
+                            </i>
+
+                            <span id="serviceCategory">
+                                Categoría
+                            </span>
+
+                        </div>
+
+
+                        <div
+                            class="detail-status"
+                            id="serviceStatus">
+
+                            <i
+                                class="fa-solid fa-circle-check"
+                                id="serviceStatusIcon">
+                            </i>
+
+                            <span id="serviceStatusText">
+                                Activo
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         CUERPO PRINCIPAL
+                    ================================================== -->
+
+                    <div class="detail-main">
+
+
+                        <!-- =================================================
+                             INFORMACIÓN PRINCIPAL
+                        ================================================== -->
+
+                        <div class="detail-primary">
+
+
+                            <div class="detail-icon"
+                                id="serviceIcon">
+
+                                <i class="fa-solid fa-laptop-code"></i>
+
+                            </div>
+
+
+                            <div class="detail-heading">
+
+                                <span class="detail-label">
+                                    SERVICIO
+                                </span>
+
+                                <h2 id="serviceTitle">
+                                    Nombre del servicio
+                                </h2>
+
+                                <p id="serviceShortDescription">
+                                    Descripción del servicio.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================================================
+                             INFORMACIÓN RÁPIDA
+                        ================================================== -->
+
+                        <div class="detail-info-grid">
+
+
+                            <div class="detail-info-item">
+
+                                <div class="detail-info-icon">
+
+                                    <i class="fa-solid fa-star"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>
+                                        Valoración
+                                    </span>
+
+                                    <strong>
+
+                                        <span id="serviceRating">
+                                            0.0
+                                        </span>
+
+                                        <small>
+                                            / 5
+                                        </small>
+
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="detail-info-item">
+
+                                <div class="detail-info-icon">
+
+                                    <i class="fa-solid fa-message"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>
+                                        Reseñas
+                                    </span>
+
+                                    <strong id="serviceReviews">
+                                        0
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="detail-info-item">
+
+                                <div class="detail-info-icon">
+
+                                    <i class="fa-solid fa-location-dot"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>
+                                        Ubicación
+                                    </span>
+
+                                    <strong id="serviceLocation">
+                                        Managua
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="detail-info-item">
+
+                                <div class="detail-info-icon">
+
+                                    <i class="fa-solid fa-calendar"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span>
+                                        Publicado
+                                    </span>
+
+                                    <strong id="serviceDate">
+                                        00/00/0000
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================================================
+                             DESCRIPCIÓN
+                        ================================================== -->
+
+                        <div class="detail-section">
+
+
+                            <div class="detail-section-title">
+
+                                <i class="fa-solid fa-align-left"></i>
+
+                                <h3>
+                                    Sobre este servicio
+                                </h3>
+
+                            </div>
+
+
+                            <div
+                                class="detail-description"
+                                id="serviceDescription">
+
+                                Aquí aparecerá la descripción completa
+                                del servicio.
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- =================================================
+                             PRECIO
+                        ================================================== -->
+
+                        <div class="detail-price-box">
+
+
+                            <div class="price-information">
+
+                                <span>
+                                    PRECIO DEL SERVICIO
+                                </span>
+
+                                <strong id="servicePrice">
+                                    $0.00
+                                </strong>
+
+                                <small>
+                                    Precio inicial
+                                </small>
+
+                            </div>
+
+
+                            <button
+                                class="request-service-button"
+                                id="requestServiceButton"
+                                type="button">
+
+                                <i class="fa-solid fa-paper-plane"></i>
+
+                                Solicitar servicio
+
+                            </button>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- =================================================
+                         PROVEEDOR
+                    ================================================== -->
+
+                    <aside class="detail-sidebar">
+
+
+                        <div class="provider-card">
+
+
+                            <div class="provider-card-header">
+
+                                <span>
+                                    PROVEEDOR
+                                </span>
+
+                            </div>
+
+
+                            <div class="provider-profile">
+
+
+                                <div
+                                    class="provider-avatar"
+                                    id="providerAvatar">
+
+                                    U
+
+                                </div>
+
+
+                                <div class="provider-information">
+
+                                    <strong id="providerName">
+                                        Usuario
+                                    </strong>
+
+                                    <span id="providerRole">
+                                        Proveedor de servicios
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="provider-divider">
+                            </div>
+
+
+                            <div class="provider-stat">
+
+
+                                <div>
+
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <span>
+                                        Valoración
+                                    </span>
+
+                                </div>
+
+
+                                <strong id="providerRating">
+                                    5.0
+                                </strong>
+
+                            </div>
+
+
+                            <div class="provider-stat">
+
+
+                                <div>
+
+                                    <i class="fa-solid fa-location-dot"></i>
+
+                                    <span>
+                                        Ubicación
+                                    </span>
+
+                                </div>
+
+
+                                <strong id="providerLocation">
+                                    Managua
+                                </strong>
+
+                            </div>
+
+
+                            <button
+                                class="contact-provider-button"
+                                id="contactProviderButton"
+                                type="button">
+
+                                <i class="fa-solid fa-message"></i>
+
+                                Contactar proveedor
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- =================================================
+                             INFORMACIÓN DEL SERVICIO
+                        ================================================== -->
+
+                        <div class="service-extra-card">
+
+
+                            <div class="extra-card-title">
+
+                                <i class="fa-solid fa-circle-info"></i>
+
+                                <h3>
+                                    Información
+                                </h3>
+
+                            </div>
+
+
+                            <div class="extra-item">
+
+                                <span>
+                                    Categoría
+                                </span>
+
+                                <strong id="extraCategory">
+                                    Tecnología
+                                </strong>
+
+                            </div>
+
+
+                            <div class="extra-item">
+
+                                <span>
+                                    Estado
+                                </span>
+
+                                <strong id="extraStatus">
+                                    Activo
+                                </strong>
+
+                            </div>
+
+
+                            <div class="extra-item">
+
+                                <span>
+                                    Fecha de publicación
+                                </span>
+
+                                <strong id="extraDate">
+                                    00/00/0000
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                    </aside>
+
+                </section>
+
+
+                <!-- =================================================
+                     SERVICIO NO ENCONTRADO
+                ================================================== -->
+
+                <section
+                    class="service-not-found"
+                    id="serviceNotFound"
+                    hidden>
+
+
+                    <div class="not-found-icon">
+
+                        <i class="fa-solid fa-circle-exclamation"></i>
+
+                    </div>
+
+
+                    <h2>
+                        Servicio no encontrado
+                    </h2>
+
+
+                    <p>
+                        El servicio que intentas consultar
+                        no existe o ya no está disponible.
+                    </p>
+
+
+                    <a href="servicios.html">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                        Volver a servicios
+
+                    </a>
+
+                </section>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- =====================================================
+         PANEL DE NOTIFICACIONES
+    ====================================================== -->
+
+    <div
+        class="notification-panel"
+        id="notificationPanel">
+
+
+        <div class="notification-header">
+
+            <div>
+
+                <span>
+                    CENTRO
+                </span>
+
+                <h3>
+                    Notificaciones
+                </h3>
+
+            </div>
+
+
+            <button
+                id="closeNotifications"
+                type="button"
+                aria-label="Cerrar notificaciones">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <div
+            class="notification-list"
+            id="notificationList">
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MODAL SOLICITAR SERVICIO
+    ====================================================== -->
+
+    <div
+        class="modal"
+        id="requestModal">
+
+
+        <div
+            class="modal-overlay"
+            id="requestModalOverlay">
+        </div>
+
+
+        <div class="modal-content">
+
+
+            <div class="modal-icon request-icon">
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </div>
+
+
+            <h2>
+                ¿Solicitar este servicio?
+            </h2>
+
+
+            <p id="requestModalMessage">
+
+                Estás a punto de enviar una solicitud
+                al proveedor de este servicio.
+
+            </p>
+
+
+            <div class="modal-actions">
+
+
+                <button
+                    class="modal-cancel"
+                    id="cancelRequest"
+                    type="button">
+
+                    Cancelar
+
+                </button>
+
+
+                <button
+                    class="modal-confirm"
+                    id="confirmRequest"
+                    type="button">
+
+                    Solicitar servicio
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MODAL CONTACTAR PROVEEDOR
+    ====================================================== -->
+
+    <div
+        class="modal"
+        id="contactModal">
+
+
+        <div
+            class="modal-overlay"
+            id="contactModalOverlay">
+        </div>
+
+
+        <div class="modal-content">
+
+
+            <div class="modal-icon contact-icon">
+
+                <i class="fa-solid fa-message"></i>
+
+            </div>
+
+
+            <h2>
+                Contactar proveedor
+            </h2>
+
+
+            <p id="contactModalMessage">
+
+                Puedes contactar al proveedor para
+                consultar cualquier detalle del servicio.
+
+            </p>
+
+
+            <div class="contact-message-box">
+
+                <textarea
+                    id="contactMessage"
+                    rows="4"
+                    placeholder="Escribe tu mensaje..."></textarea>
+
+            </div>
+
+
+            <div class="modal-actions">
+
+
+                <button
+                    class="modal-cancel"
+                    id="cancelContact"
+                    type="button">
+
+                    Cancelar
+
+                </button>
+
+
+                <button
+                    class="modal-confirm"
+                    id="sendContact"
+                    type="button">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    Enviar mensaje
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MODAL CERRAR SESIÓN
+    ====================================================== -->
+
+    <div
+        class="modal"
+        id="logoutModal">
+
+
+        <div
+            class="modal-overlay"
+            id="logoutModalOverlay">
+        </div>
+
+
+        <div class="modal-content">
+
+
+            <div class="modal-icon">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+            </div>
+
+
+            <h2>
+                ¿Cerrar sesión?
+            </h2>
+
+
+            <p>
+                Tu sesión actual se cerrará y tendrás que
+                iniciar sesión nuevamente para acceder a ZentryX.
+            </p>
+
+
+            <div class="modal-actions">
+
+
+                <button
+                    class="modal-cancel"
+                    id="cancelLogout"
+                    type="button">
+
+                    Cancelar
+
+                </button>
+
+
+                <button
+                    class="modal-confirm"
+                    id="confirmLogout"
+                    type="button">
+
+                    Cerrar sesión
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         TOAST
+    ====================================================== -->
+
+    <div
+        class="toast"
+        id="toast">
+
+
+        <div
+            class="toast-icon"
+            id="toastIcon">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+        </div>
+
+
+        <div>
+
+            <strong id="toastTitle">
+                Correcto
+            </strong>
+
+            <p id="toastMessage">
+                Operación realizada correctamente.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="../js/servicio-detalle.js"></script>
+
+
+</body>
+
+</html>
